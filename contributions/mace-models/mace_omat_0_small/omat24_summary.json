@@ -1,0 +1,75 @@
+{
+  "dataset": "omat24",
+  "device": "cpu",
+  "full_dataset_complete": true,
+  "structures": 117004,
+  "atoms": 1657765,
+  "finite_angle_atoms": 1657763,
+  "atoms_above_DFT_force_0_01": 1657743,
+  "undefined_angle_atoms": 2,
+  "comparison": null,
+  "notebook": "C:\\Users\\mwang\\Documents\\Codex\\2026-10-09\\what-does-prof-mo-in-my\\FP-DeErr\\Force_error\\analysis\\force_error_analysis_omat24_rattled_1000.ipynb",
+  "summary_cell": 8,
+  "provenance": {
+    "model": "MACE-OMAT-0 Small",
+    "dataset": {
+      "path": "C:\\Users\\mwang\\Documents\\Codex\\2026-10-09\\what-does-prof-mo-in-my\\datasets\\rattled-1000\\data.aselmdb",
+      "sha256": "f79b070204820c52ab7e7e2cc7d069768c3e41fb5484f561fcb378c3bf279e51",
+      "structures": 117004,
+      "archive_sha256": "1d887168898997b9da8dfaec3a30132516c6bce0bb5cdfde9aa936d6c4190fd2",
+      "version": "241220 validation rattled-1000",
+      "source_url": "https://dl.fbaipublicfiles.com/opencatalystproject/data/omat/241220/omat/val/rattled-1000.tar.gz"
+    },
+    "weights_sha256": "0abfde07862cf1e93b8b4d03cb702f29ce9c344ff2fc4de2ec0d7166d6c113a5",
+    "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+    "device": "cpu",
+    "dtype": "float64",
+    "head": "omat_pbe",
+    "cutoff_angstrom": 6.0,
+    "dispersion_correction": false,
+    "batch_size": 16,
+    "shard_size": 128,
+    "validation_sha256": "5af738917e0e7f8d86dfab24253a4473fafeb371292fe9a206272be1bc962ec6",
+    "force_results_sha256": "d6e8837b9a6444fbed083dfb556853a3fafa624aa4f51718214599d53e340aff",
+    "versions": {
+      "mace-torch": "0.3.16",
+      "torch": "2.7.1",
+      "e3nn": "0.4.4",
+      "numpy": "1.26.4",
+      "ase": "3.23.0",
+      "pymatgen": "2024.10.29",
+      "matscipy": "1.1.1"
+    }
+  },
+  "model": "MACE-OMAT-0 Small",
+  "summary_metrics": {
+    "\u0394|F| MAE/RMSE (eV/\u00c5)": "0.14 / 0.32",
+    "\u0394\u03b8 MAE/RMSE (\u00b0)": "5 / 10",
+    "\u0394|F| MAE/RMSE (eV/\u00c5), |\u0394|F|| < 1 eV/\u00c5": "0.12 / 0.19",
+    "Frac. |\u0394|F|| < 0.01 eV/\u00c5 & \u0394\u03b8 < 1\u00b0/20\u00b0 (%)": "1.8 / 8.1",
+    "Frac. |\u0394|F|| < 0.01 eV/\u00c5 (%) \u2191": "8.4",
+    "Frac. |\u0394|F|| > 1 eV/\u00c5 (%) \u2193": "0.76",
+    "\u0394|F| MAE/RMSE (eV/\u00c5), on FE atoms": "0.15 / 0.35",
+    "\u0394\u03b8 MAE/RMSE (\u00b0), on FE atoms": "4 / 6"
+  },
+  "execution_history": [
+    {
+      "started_utc": "2026-10-11T18:32:48.955515+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 0
+    },
+    {
+      "started_utc": "2026-10-11T18:36:04.205076+00:00",
+      "workers": 2,
+      "threads_per_worker": 1,
+      "resumed_from": 128
+    },
+    {
+      "started_utc": "2026-10-11T19:43:07.717235+00:00",
+      "workers": 4,
+      "threads_per_worker": 1,
+      "resumed_from": 19584
+    }
+  ]
+}

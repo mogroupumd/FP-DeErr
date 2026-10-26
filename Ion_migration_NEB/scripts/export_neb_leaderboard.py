@@ -74,13 +74,7 @@ import json
 import sys
 from pathlib import Path
 
-FP_ORDER = [
-    "MACE-MP0_medium", "CHGNET", "M3GNET_pes", "UMA_s1_p1",
-    "M3GNET_matpes_PBE", "TensorNET_matpes_PBE", "MACE_matpes_pbe",
-    "Orb_v3_conservative_inf_omat", "SevenNet_mf_ompa", "MatterSim_v1_5M",
-    "Nequix_oam_1", "GPTFF_v2", "NEP89", "DPA4_Plus_OMat24",
-    "GRACE_3L_OMAT_large_ft_AM",
-]
+FP_ORDER = ['MACE-MP0_medium', 'CHGNET', 'M3GNET_pes', 'UMA_s1_p1', 'M3GNET_matpes_PBE', 'TensorNET_matpes_PBE', 'MACE_matpes_pbe', 'Orb_v3_conservative_inf_omat', 'SevenNet_mf_ompa', 'MatterSim_v1_5M', 'Nequix_oam_1', 'GPTFF_v2', 'NEP89', 'DPA4_Plus_OMat24', 'GRACE_3L_OMAT_large_ft_AM', 'MACE_OMAT_0_SMALL']
 # GPTFF_v2 ran under ASE 3.28.0 while every other second-wave FP ran 3.29.0
 # (all fifteen otherwise share matcalc 0.4.3, neb_method "aseneb" and the same
 # BFGS-through-MatCalc optimizer). It is also the barrier outlier of the set,
@@ -91,23 +85,7 @@ FP_ORDER = [
 # wave, and its full/static ratio (1.07) sits inside the 0.88-1.29 band spanned
 # by all fifteen. The anomaly is in the potential energy surface, not the ASE
 # version. See NEB_matcalc_ase_provenance.md.
-FP_DISPLAY_NAMES = {
-    "MACE-MP0_medium":      "MACE",
-    "CHGNET":               "CHGNet",
-    "M3GNET_pes":           "M3GNet",
-    "UMA_s1_p1":            "UMA",
-    "M3GNET_matpes_PBE":    "M3GNet-MatPES",
-    "TensorNET_matpes_PBE": "TensorNet-MatPES",
-    "MACE_matpes_pbe":      "MACE-MatPES",
-    "Orb_v3_conservative_inf_omat": "Orb",
-    "SevenNet_mf_ompa":             "SevenNet",
-    "MatterSim_v1_5M":              "MatterSim",
-    "Nequix_oam_1":                 "Nequix",
-    "GPTFF_v2":                     "GPTFF",
-    "NEP89":                        "NEP89",
-    "DPA4_Plus_OMat24":             "DPA4",
-    "GRACE_3L_OMAT_large_ft_AM":    "GRACE",
-}
+FP_DISPLAY_NAMES = {'MACE-MP0_medium': 'MACE', 'CHGNET': 'CHGNet', 'M3GNET_pes': 'M3GNet', 'UMA_s1_p1': 'UMA', 'M3GNET_matpes_PBE': 'M3GNet-MatPES', 'TensorNET_matpes_PBE': 'TensorNet-MatPES', 'MACE_matpes_pbe': 'MACE-MatPES', 'Orb_v3_conservative_inf_omat': 'Orb', 'SevenNet_mf_ompa': 'SevenNet', 'MatterSim_v1_5M': 'MatterSim', 'Nequix_oam_1': 'Nequix', 'GPTFF_v2': 'GPTFF', 'NEP89': 'NEP89', 'DPA4_Plus_OMat24': 'DPA4', 'GRACE_3L_OMAT_large_ft_AM': 'GRACE', 'MACE_OMAT_0_SMALL': 'MACE-OMAT-0 Small'}
 OUTLIER_THRESHOLD = 1.0
 ROUND_DECIMALS = 4
 

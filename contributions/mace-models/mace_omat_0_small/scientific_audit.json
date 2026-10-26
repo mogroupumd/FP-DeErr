@@ -1,0 +1,146 @@
+{
+  "pass": true,
+  "deep_source_verification": true,
+  "auditor_sha256": "312e05b83c696a6e5291f9d20b4e178e5b89b4461dc2794d23c5d518e934cfe4",
+  "timestamp_utc": "2026-10-12T23:04:10.645937+00:00",
+  "scope_sha256": "a3fd281d728ea96757e742249b7f351a263748a3f9e3f7a81af82e223e497c93",
+  "checks": {
+    "baseline_static_phase_ordering": {
+      "complete": true,
+      "structures": 6697,
+      "finite_energy_and_force_shapes": true,
+      "summary_sha256": "e7c94017eae55f304bf9dcbf7b1e46cec0054df1a89798693724ba7fd3d4eaa6"
+    },
+    "baseline_hull_relaxation": {
+      "complete": true,
+      "structures": 597,
+      "converged": 597,
+      "non_converged": 0,
+      "finite_energy_and_force_shapes": true,
+      "fixed_cells_verified": true,
+      "record_provenance_verified": true,
+      "summary_sha256": "5689bfd9a6eb0ecd0337a3556c21c022950018be83a8eb8cf68618deaaa8c477"
+    },
+    "baseline_ordering_relaxation": {
+      "complete": true,
+      "structures": 6100,
+      "converged": 6100,
+      "non_converged": 0,
+      "finite_energy_and_force_shapes": true,
+      "fixed_cells_verified": true,
+      "record_provenance_verified": true,
+      "summary_sha256": "7a5c6bf3ae57a706f0c4f6179982a0e0d8daa962e8c3e66ad2a872efc8ba1c51"
+    },
+    "baseline_matpes_pbe": {
+      "complete": true,
+      "structures": 434712,
+      "atoms": 3881535,
+      "undefined_angles": 210578,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "summary_sha256": "bdeabb0af3af7db135c9277bd9f3b1f98a2acab71b03eb56397a62bd903c087f"
+    },
+    "baseline_omat24": {
+      "complete": true,
+      "structures": 117004,
+      "atoms": 1657765,
+      "undefined_angles": 2,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "summary_sha256": "e55a3e5ee2c45c726910cc5acedecc2aeaf5d297835f0f745c09970144e1edab"
+    },
+    "baseline_neb": {
+      "complete": true,
+      "pathways": 154,
+      "full_images": 1078,
+      "static_images": 1078,
+      "converged": 152,
+      "non_converged": 2,
+      "failed": 0,
+      "fixed_cells_verified": true,
+      "additional_neb_all_leaderboard_metrics_recomputed": false,
+      "all_force_shapes_and_values_valid": true,
+      "every_path_raw_record_and_provenance_matches_export": true,
+      "summary_sha256": "282bb5ed67d27e2ef1f1eabb5c4e649ec756b0087c6fba6a49380a50a3de0de8"
+    },
+    "additional_static_phase_ordering": {
+      "complete": true,
+      "structures": 6697,
+      "finite_energy_and_force_shapes": true,
+      "summary_sha256": "69ea52604f2d023e9a5b7ccb609573a091a5bb704361e8c998fc1c752823b7a7"
+    },
+    "additional_relaxation": {
+      "complete": true,
+      "structures": 6697,
+      "converged": 6697,
+      "non_converged": 0,
+      "finite_energy_and_force_shapes": true,
+      "fixed_cells_verified": true,
+      "record_provenance_verified": true,
+      "summary_sha256": "8c5f0956e59dee028698152d216ccbda24f11f71a3f601725edbb5047cdccdf2"
+    },
+    "additional_matpes_pbe": {
+      "complete": true,
+      "structures": 434712,
+      "atoms": 3881535,
+      "undefined_angles": 217510,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "summary_sha256": "105e37ff90abd83e11257a5a3c802a19cc55bd78e8d8e1f505ef1a9af10b7284"
+    },
+    "additional_omat24": {
+      "complete": true,
+      "structures": 117004,
+      "atoms": 1657765,
+      "undefined_angles": 2,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "summary_sha256": "e62b87e3bf13ed95114f888a0c7bc244a9f87b3333cdc7a1948e1ee9af2b4775"
+    },
+    "additional_neb": {
+      "complete": true,
+      "pathways": 154,
+      "full_images": 1078,
+      "static_images": 1078,
+      "converged": 152,
+      "non_converged": 2,
+      "failed": 0,
+      "fixed_cells_verified": true,
+      "additional_neb_all_leaderboard_metrics_recomputed": true,
+      "all_force_shapes_and_values_valid": true,
+      "every_path_raw_record_and_provenance_matches_export": true,
+      "summary_sha256": "df2a07bb4b4c51e7ab68f32761f330f1a28473c86affb8416712b6790f9a266b"
+    },
+    "weights_CHGNet": {
+      "complete": true,
+      "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1"
+    },
+    "weights_MACE-OMAT-0 Small": {
+      "complete": true,
+      "sha256": "0abfde07862cf1e93b8b4d03cb702f29ce9c344ff2fc4de2ec0d7166d6c113a5"
+    },
+    "upstream_source": {
+      "complete": true,
+      "commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+      "tracked_source_unchanged": true
+    },
+    "dataset_sha_matpes_pbe": {
+      "complete": true,
+      "sha256": "0d3fc076cfe9782e4fbba77f41315b24be034ee837fa8708e41dba652fa062a2"
+    },
+    "dataset_sha_omat24": {
+      "complete": true,
+      "sha256": "f79b070204820c52ab7e7e2cc7d069768c3e41fb5484f561fcb378c3bf279e51"
+    }
+  },
+  "optional_VASP_diagnostics_required": false,
+  "meaning": "Pass verifies population coverage, data integrity and scientific output invariants; it does not assert exact agreement of every published metric."
+}

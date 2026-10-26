@@ -1,0 +1,64 @@
+{
+  "prepared_utc": "2026-10-26T01:30:43.575452+00:00",
+  "upstream_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+  "mode": "small_only_rehearsal",
+  "models": [
+    "mace_omat_0_small"
+  ],
+  "audit_gate_passed": true,
+  "published": false,
+  "force_proofs": {
+    "mace_omat_0_small": {
+      "matpes_pbe": {
+        "structures": 434712,
+        "atoms": 3881535,
+        "finite_angle_atoms": 3664025,
+        "summary_sha256": "105e37ff90abd83e11257a5a3c802a19cc55bd78e8d8e1f505ef1a9af10b7284"
+      },
+      "omat24": {
+        "structures": 117004,
+        "atoms": 1657765,
+        "finite_angle_atoms": 1657763,
+        "summary_sha256": "e62b87e3bf13ed95114f888a0c7bc244a9f87b3333cdc7a1948e1ee9af2b4775"
+      }
+    }
+  },
+  "existing_html_content_preserved": true,
+  "existing_neb_model_records_preserved": true,
+  "neb_record_count": 16,
+  "force_added_rows": 12,
+  "phase_added_rows": 5,
+  "audit_sha256": {
+    "mace_omat_0_small": "07e17fc79216d56764a2b4927eb090f8a732e71d16f495f02d5ddeb7d0a369a8"
+  },
+  "files_sha256": {
+    "docs/force-error.html": "a8edcec567b7af0fa2ad25056e5e8da5ca1ce1d87aefc2e67ce75808abdcb9cd",
+    "docs/phase-stability-ordering.html": "9876418611e7df82552abe30afcf55b17cef499e9eba51347a34269988f20205",
+    "contributions/mace-models/mace_omat_0_small/neb_results.json.gz": "5823ce99c07f738d4ee7ec8c603e52c1072dc885d286a9db3112f3459281d300",
+    "docs/data/ion_migration_neb_leaderboard_summary.json": "2aeec442db7751bcee63122821f241cd62be92b8e8fe52a04fb8ccecc7cdd5b9",
+    "Ion_migration_NEB/data/ion_migration_neb_leaderboard_summary.json": "2aeec442db7751bcee63122821f241cd62be92b8e8fe52a04fb8ccecc7cdd5b9",
+    "docs/ion-migration-neb.html": "ae807c4bf17f1eb7f98d17becf4bf6cdf2e87e7b0de824cea04854867f892efe",
+    "Ion_migration_NEB/scripts/export_neb_leaderboard.py": "9e71191a3fa8eb061359fd67813a763c3691e35985ebadff87e9d4e87f616b7b",
+    "contributions/mace-models/README.md": "ae1ad8ea8b81f2394f97ba2a041de8a18e90a29be6fd604abaaad3fcf7f34582",
+    "contributions/mace-models/checkpoints.json": "1e9dd364c2a535c425473e2405fd41ae0ec300cceaee1613fe70fc8aa1430eae",
+    "contributions/mace-models/mace_omat_0_small/scientific_audit.json": "07e17fc79216d56764a2b4927eb090f8a732e71d16f495f02d5ddeb7d0a369a8",
+    "contributions/mace-models/mace_omat_0_small/hull_metrics.csv": "91f13423437fbf5f59cb0cb51666179aee23d6d82d3e2d90f467e4663814fd3d",
+    "contributions/mace-models/mace_omat_0_small/ordering_metrics.csv": "1548fb898bcb952cf423a6f0aae49aac264c43ee2532ba12a6ed791a9267d9a9",
+    "contributions/mace-models/mace_omat_0_small/rmsd_metrics.csv": "a8e5c9ca1defab242aee0f73e3d28fa64d63e4d5f742a93c63ff12c2fc108b6f",
+    "contributions/mace-models/mace_omat_0_small/matpes_pbe_summary_metrics.csv": "a4aebeeaf3a7ca79049bf532f4c0b62108e4206d6d58e1ed3093c040ed489ddc",
+    "contributions/mace-models/mace_omat_0_small/matpes_pbe_summary.json": "105e37ff90abd83e11257a5a3c802a19cc55bd78e8d8e1f505ef1a9af10b7284",
+    "contributions/mace-models/mace_omat_0_small/omat24_summary_metrics.csv": "27dd23104ff8b46640121550f84e2e01cdce46fe8e380cafdf1053eb92ca9b08",
+    "contributions/mace-models/mace_omat_0_small/omat24_summary.json": "e62b87e3bf13ed95114f888a0c7bc244a9f87b3333cdc7a1948e1ee9af2b4775",
+    "contributions/mace-models/validate.py": "97dbe7c03454a1de6253c0475e43e5bef90b9b9ece7fafa7cc481f621bff8499",
+    ".gitattributes": "b9b3423cc599d1848c643cc5a99a6037e2938c1abb92d886654e45fddca62eb5"
+  },
+  "source_files_sha256": {
+    "docs/force-error.html": "dc1dffb6b7070fb3c05998ced078bb721c06cca9dccaccce8babe0f1898bdffe",
+    "docs/phase-stability-ordering.html": "59aceeb16f80925c663fe9b1919e23149e34a064bb37c5d4cbb990660d2ff2da",
+    "docs/data/ion_migration_neb_leaderboard_summary.json": "18fcf883d2121b34df8d3784099455e1ac3c13899083730b921b8a6138046427",
+    "Ion_migration_NEB/data/ion_migration_neb_leaderboard_summary.json": "18fcf883d2121b34df8d3784099455e1ac3c13899083730b921b8a6138046427",
+    "docs/ion-migration-neb.html": "17502656ec3524d54654f881c4d6001e4bbfd18e588bc32a2849f2ef9ff552ea",
+    "Ion_migration_NEB/scripts/export_neb_leaderboard.py": "031369a0c913ca488c4b4a4255ec90e36032494f958b049ac69d49c1ca7b967f"
+  },
+  "builder_sha256": "afb27d1b7ae5c269afed619813c787cabd04c580a9d954964ade827bf171aea4"
+}

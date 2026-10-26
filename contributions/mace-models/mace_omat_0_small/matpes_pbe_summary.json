@@ -1,0 +1,83 @@
+{
+  "dataset": "matpes_pbe",
+  "device": "cuda",
+  "full_dataset_complete": true,
+  "structures": 434712,
+  "atoms": 3881535,
+  "finite_angle_atoms": 3664025,
+  "atoms_above_DFT_force_0_01": 3558962,
+  "undefined_angle_atoms": 217510,
+  "comparison": null,
+  "notebook": "C:\\Users\\mwang\\Documents\\Codex\\2026-10-09\\what-does-prof-mo-in-my\\FP-DeErr\\Force_error\\analysis\\force_error_analysis_matpes_pbe.ipynb",
+  "summary_cell": 15,
+  "provenance": {
+    "model": "MACE-OMAT-0 Small",
+    "dataset": {
+      "path": "C:\\Users\\mwang\\Documents\\Codex\\2026-10-09\\what-does-prof-mo-in-my\\datasets\\MatPES-PBE-2025.1.jsonl",
+      "sha256": "0d3fc076cfe9782e4fbba77f41315b24be034ee837fa8708e41dba652fa062a2",
+      "structures": 434712,
+      "source_url": "https://huggingface.co/datasets/materialyze/matpes/resolve/main/MatPES-PBE-2025.1.jsonl",
+      "version": "2025.1",
+      "anchor_force_indices": [
+        29632,
+        29634,
+        29635,
+        29639,
+        29640
+      ]
+    },
+    "weights_sha256": "0abfde07862cf1e93b8b4d03cb702f29ce9c344ff2fc4de2ec0d7166d6c113a5",
+    "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+    "device": "cuda",
+    "dtype": "float64",
+    "head": "omat_pbe",
+    "cutoff_angstrom": 6.0,
+    "dispersion_correction": false,
+    "batch_size": 16,
+    "shard_size": 128,
+    "validation_sha256": "5af738917e0e7f8d86dfab24253a4473fafeb371292fe9a206272be1bc962ec6",
+    "force_results_sha256": "d6e8837b9a6444fbed083dfb556853a3fafa624aa4f51718214599d53e340aff",
+    "versions": {
+      "mace-torch": "0.3.16",
+      "torch": "2.7.1+cu126",
+      "e3nn": "0.4.4",
+      "numpy": "1.26.4",
+      "ase": "3.26.0",
+      "pymatgen": "2025.4.20",
+      "matscipy": "1.1.1"
+    },
+    "cpu_cuda_validation_sha256": "722c7b050c1389f73bd452e20baa5e1b3d35eb7abd68c28200d5b71b1617ef54",
+    "cuda_partition_validation_sha256": "84edf91942ba180e3367c97bb56d1babea5aad64e4f43dcb5d0b40ebc87cf6aa",
+    "cuda_retry_control_validation_sha256": "c721b27c46045b7005282d5f31b027b0964986c19555367ddf6b019b55110e2c",
+    "cuda_memory_fraction": 0.9,
+    "tf32": false
+  },
+  "model": "MACE-OMAT-0 Small",
+  "summary_metrics": {
+    "\u0394|F| MAE/RMSE (eV/\u00c5)": "0.20 / 0.98",
+    "\u0394\u03b8 MAE/RMSE (\u00b0)": "34 / 56",
+    "\u0394|F| MAE/RMSE (eV/\u00c5), |\u0394|F|| < 1 eV/\u00c5": "0.16 / 0.25",
+    "Frac. |\u0394|F|| < 0.01 eV/\u00c5 & \u0394\u03b8 < 1\u00b0/20\u00b0 (%)": "1.2 / 5.7",
+    "Frac. |\u0394|F|| < 0.01 eV/\u00c5 (%) \u2191": "8.8",
+    "Frac. |\u0394|F|| > 1 eV/\u00c5 (%) \u2193": "2.45",
+    "\u0394|F| MAE/RMSE (eV/\u00c5), on FE atoms": "0.38 / 1.83",
+    "\u0394\u03b8 MAE/RMSE (\u00b0), on FE atoms": "15 / 25"
+  },
+  "execution_history": [
+    {
+      "started_utc": "2026-10-12T02:27:41.641792+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 0
+    },
+    {
+      "started_utc": "2026-10-12T16:47:43.920722+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 71936,
+      "runner_sha256": "72d5a8baccf26227efcd4e2d3cab13a0304499d975bb19709fc60d95653692ce",
+      "cuda_retry_control_validation_sha256": "efe3244da697a7ea57bec4de87b75c7dffe60a1c9acdf2ef2bacdc73860940c4",
+      "retained_provenance_retry_validation_sha256": "c721b27c46045b7005282d5f31b027b0964986c19555367ddf6b019b55110e2c"
+    }
+  ]
+}
