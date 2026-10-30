@@ -1,0 +1,124 @@
+{
+  "pass": true,
+  "model": "mace_mh_1_omat_pbe",
+  "deep_source_verification": true,
+  "timestamp_utc": "2026-10-28T23:33:20.457539+00:00",
+  "auditor_sha256": "23864c9f3123c75698d6258c073f9b5310d190160be9fb5297ef7b7e193b62d8",
+  "reused_original_auditor_sha256": "312e05b83c696a6e5291f9d20b4e178e5b89b4461dc2794d23c5d518e934cfe4",
+  "bound_auditor_sha256": "d2778afa14a2477c9a2421b440837ecd52a4dd4fc5aff414b3d2e5261a24c22b",
+  "scope_sha256": "25ef452fae6f5b58a8a1e3a43f248b3679541d1f262caa8f32dddfa6e78e0521",
+  "model_sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+  "checks": {
+    "upstream_source": {
+      "complete": true,
+      "commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815"
+    },
+    "dataset_matpes_pbe": {
+      "complete": true
+    },
+    "dataset_omat24": {
+      "complete": true
+    },
+    "static_phase_ordering": {
+      "complete": true,
+      "structures": 6697,
+      "finite_energy_and_force_shapes": true,
+      "summary_sha256": "78a45eaff67b3eff73f38e7b229dcead6cb0f7d79471bae8514033676ce5198e"
+    },
+    "full_relaxation": {
+      "complete": true,
+      "structures": 6697,
+      "converged": 6697,
+      "non_converged": 0,
+      "finite_energy_and_force_shapes": true,
+      "fixed_cells_verified": true,
+      "record_provenance_verified": true,
+      "calibration_sha256": "83b0363a936900b26f1cadf227317200bbbf3f030026322ca6265d2a10c001e6",
+      "cpu_cuda_profile_validation": true,
+      "unchanged_numerical_audit": true,
+      "execution_counts": {
+        "cpu": 5082,
+        "cuda": 1615
+      },
+      "summary_sha256": "818c7063f646a6e6c052bafb5a7ab950dd91a5ce60f1e1ce5adf0b75addaedae"
+    },
+    "matpes_pbe": {
+      "complete": true,
+      "structures": 434712,
+      "atoms": 3881535,
+      "undefined_angles": 217207,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "saved_tensor_disk_offload": {
+        "complete": true,
+        "count": 1,
+        "cases": [
+          {
+            "structure_index": 144862,
+            "storage_statistics": {
+              "saved_tensors": 105,
+              "saved_tensor_bytes": 7256902912,
+              "unpack_calls": 105,
+              "minimum_bytes": 1048576
+            },
+            "validation_sha256": "ce79ae1580086ec243b2bbe190622ce522282afa1fb1552bcb72dbd5132ff0c7"
+          }
+        ],
+        "arithmetic_device": "cuda",
+        "dtype": "float64",
+        "storage_only_adaptation": true
+      },
+      "summary_sha256": "e99dc8f8c1da8455ec9024a6c046e6ce15ace2d5606edfab415c3ba6172fa9f0"
+    },
+    "omat24": {
+      "complete": true,
+      "structures": 117004,
+      "atoms": 1657765,
+      "undefined_angles": 2,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "saved_tensor_disk_offload": {
+        "complete": true,
+        "count": 0,
+        "cases": [],
+        "arithmetic_device": "cuda",
+        "dtype": "float64",
+        "storage_only_adaptation": true
+      },
+      "summary_sha256": "ba241193fb7cb9e5e3c34460023a08c784c5026eb8aafd052103404856d4f0b5"
+    },
+    "full_neb": {
+      "complete": true,
+      "pathways": 154,
+      "full_images": 1078,
+      "static_images": 1078,
+      "converged": 153,
+      "non_converged": 1,
+      "failed": 0,
+      "fixed_cells_verified": true,
+      "additional_neb_all_leaderboard_metrics_recomputed": true,
+      "all_force_shapes_and_values_valid": true,
+      "every_path_raw_record_and_provenance_matches_export": true,
+      "summary_sha256": "8121d3805312a2fb514aba516a61c0a3c342bb0859a82a80866d2af11f685ff3"
+    },
+    "static_phase_metrics": {
+      "complete": true,
+      "all_public_metric_tables_recomputed": true,
+      "every_export_matches_raw_prediction": true
+    },
+    "relaxed_phase_metrics": {
+      "complete": true,
+      "all_public_metric_tables_recomputed": true,
+      "every_export_matches_raw_prediction": true
+    },
+    "static_neb": {
+      "complete": true,
+      "summary_sha256": "24763d620b8227d0f3a9ccb8bab57a911eb720437a439d282a5e64b9d6331daf"
+    }
+  },
+  "errors": {}
+}

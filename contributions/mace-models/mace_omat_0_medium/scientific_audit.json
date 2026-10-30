@@ -1,0 +1,113 @@
+{
+  "pass": true,
+  "model": "mace_omat_0_medium",
+  "deep_source_verification": true,
+  "timestamp_utc": "2026-10-28T23:24:00.530032+00:00",
+  "auditor_sha256": "23864c9f3123c75698d6258c073f9b5310d190160be9fb5297ef7b7e193b62d8",
+  "reused_original_auditor_sha256": "312e05b83c696a6e5291f9d20b4e178e5b89b4461dc2794d23c5d518e934cfe4",
+  "bound_auditor_sha256": "cc9635d11a2a6c82370a25597c1eb7e503096dbc24db8f10b0b53d7e2eb1e823",
+  "scope_sha256": "25ef452fae6f5b58a8a1e3a43f248b3679541d1f262caa8f32dddfa6e78e0521",
+  "model_sha256": "d4b14be9afa294eebdbe31a0280b26a0fa29715771e978cbfd3ca24e0d90307a",
+  "checks": {
+    "upstream_source": {
+      "complete": true,
+      "commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815"
+    },
+    "dataset_matpes_pbe": {
+      "complete": true
+    },
+    "dataset_omat24": {
+      "complete": true
+    },
+    "static_phase_ordering": {
+      "complete": true,
+      "structures": 6697,
+      "finite_energy_and_force_shapes": true,
+      "summary_sha256": "b741c13a7b70ac10f6e01141c981541ab04870028997725c6f4add09f609500b"
+    },
+    "full_relaxation": {
+      "complete": true,
+      "structures": 6697,
+      "converged": 6697,
+      "non_converged": 0,
+      "finite_energy_and_force_shapes": true,
+      "fixed_cells_verified": true,
+      "record_provenance_verified": true,
+      "calibration_sha256": "83b0363a936900b26f1cadf227317200bbbf3f030026322ca6265d2a10c001e6",
+      "cpu_cuda_profile_validation": true,
+      "unchanged_numerical_audit": true,
+      "execution_counts": {
+        "cpu": 5821,
+        "cuda": 876
+      },
+      "summary_sha256": "a15620dc7a235d4bdf29b5cd38eab8e218012b3762ce844f11b917d7beb65aa8"
+    },
+    "matpes_pbe": {
+      "complete": true,
+      "structures": 434712,
+      "atoms": 3881535,
+      "undefined_angles": 217509,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "saved_tensor_disk_offload": {
+        "complete": true,
+        "count": 0,
+        "cases": [],
+        "arithmetic_device": "cuda",
+        "dtype": "float64",
+        "storage_only_adaptation": true
+      },
+      "summary_sha256": "f46121be36abe17336a3465d59264288f0038a744d3d40c4f331919d5a34a76a"
+    },
+    "omat24": {
+      "complete": true,
+      "structures": 117004,
+      "atoms": 1657765,
+      "undefined_angles": 2,
+      "all_shard_checksums_and_contiguous_indices_valid": true,
+      "canonical_metrics_recomputed_from_raw_forces": true,
+      "all_displayed_force_metrics_recomputed_from_raw_population": true,
+      "original_source_ids_and_DFT_forces_checked": true,
+      "saved_tensor_disk_offload": {
+        "complete": true,
+        "count": 0,
+        "cases": [],
+        "arithmetic_device": "cuda",
+        "dtype": "float64",
+        "storage_only_adaptation": true
+      },
+      "summary_sha256": "bb2a7ff2baf5e46ada3273ae025c1974b7dd869c65a448090dc9ae55d04ac839"
+    },
+    "full_neb": {
+      "complete": true,
+      "pathways": 154,
+      "full_images": 1078,
+      "static_images": 1078,
+      "converged": 152,
+      "non_converged": 2,
+      "failed": 0,
+      "fixed_cells_verified": true,
+      "additional_neb_all_leaderboard_metrics_recomputed": true,
+      "all_force_shapes_and_values_valid": true,
+      "every_path_raw_record_and_provenance_matches_export": true,
+      "summary_sha256": "39472bba555d3d89dc555cda4608e87d4e34348f11f77f1bb6b9d34eed9764f0"
+    },
+    "static_phase_metrics": {
+      "complete": true,
+      "all_public_metric_tables_recomputed": true,
+      "every_export_matches_raw_prediction": true
+    },
+    "relaxed_phase_metrics": {
+      "complete": true,
+      "all_public_metric_tables_recomputed": true,
+      "every_export_matches_raw_prediction": true
+    },
+    "static_neb": {
+      "complete": true,
+      "summary_sha256": "a8bb46110681ccc3c65094cb3d3d2c2d3039181ab3596e86d17463d5edeec117"
+    }
+  },
+  "errors": {}
+}

@@ -46,7 +46,9 @@
     "NEP89",
     "DPA4_Plus_OMat24",
     "GRACE_3L_OMAT_large_ft_AM",
-    "MACE_OMAT_0_SMALL"
+    "MACE_OMAT_0_SMALL",
+    "MACE_OMAT_0_MEDIUM",
+    "MACE_MH_1_OMAT_PBE"
   ],
   "models": [
     {
@@ -400,6 +402,50 @@
       "endpoint_rmsd_lt_0_05_pct": 72.3684,
       "endpoint_rmsd_lt_0_10_pct": 87.5,
       "endpoint_rmsd_lt_0_20_pct": 96.0526
+    },
+    {
+      "fp_key": "MACE_OMAT_0_MEDIUM",
+      "display_name": "MACE-OMAT-0 Medium",
+      "n_nonconverged": 2,
+      "n_total": 154,
+      "barrier_mae_full_eV": 0.0541,
+      "barrier_rmse_full_eV": 0.0981,
+      "barrier_mae_static_eV": 0.0685,
+      "barrier_rmse_static_eV": 0.1257,
+      "endpoint_energy_diff_mae_eV": 0.0283,
+      "endpoint_energy_diff_rmse_eV": 0.0697,
+      "endpoint_ranking_agreement_pct": 87.5,
+      "energy_profile_shape_agreement_pct": 94.0789,
+      "endpoint_rmsd_n_converged_paths": 152,
+      "endpoint_rmsd_n_endpoint_attempts": 304,
+      "endpoint_rmsd_map_success_pct": 100.0,
+      "endpoint_rmsd_mean_angstrom": 0.0542,
+      "endpoint_rmsd_max_angstrom": 0.9631,
+      "endpoint_rmsd_lt_0_05_pct": 80.5921,
+      "endpoint_rmsd_lt_0_10_pct": 89.4737,
+      "endpoint_rmsd_lt_0_20_pct": 96.7105
+    },
+    {
+      "fp_key": "MACE_MH_1_OMAT_PBE",
+      "display_name": "MACE-MH-1 (omat_pbe)",
+      "n_nonconverged": 1,
+      "n_total": 154,
+      "barrier_mae_full_eV": 0.0542,
+      "barrier_rmse_full_eV": 0.0938,
+      "barrier_mae_static_eV": 0.066,
+      "barrier_rmse_static_eV": 0.116,
+      "endpoint_energy_diff_mae_eV": 0.0271,
+      "endpoint_energy_diff_rmse_eV": 0.0649,
+      "endpoint_ranking_agreement_pct": 86.9281,
+      "energy_profile_shape_agreement_pct": 95.4248,
+      "endpoint_rmsd_n_converged_paths": 153,
+      "endpoint_rmsd_n_endpoint_attempts": 306,
+      "endpoint_rmsd_map_success_pct": 100.0,
+      "endpoint_rmsd_mean_angstrom": 0.0479,
+      "endpoint_rmsd_max_angstrom": 0.738,
+      "endpoint_rmsd_lt_0_05_pct": 80.3922,
+      "endpoint_rmsd_lt_0_10_pct": 91.1765,
+      "endpoint_rmsd_lt_0_20_pct": 96.732
     }
   ],
   "generation_metadata": {
@@ -442,6 +488,22 @@
         "uncompressed_export_input_sha256": "567fde78adfe04eea0e0fef31367ccd5266afaddc9c3c9167c4c66b3c511c8fd",
         "fp_keys": [
           "MACE_OMAT_0_SMALL"
+        ]
+      },
+      {
+        "source_results_file": "contributions/mace-models/mace_omat_0_medium/neb_results.json.gz",
+        "source_results_sha256": "e1e1236d29216162ac00c26fa513aaf2397acc2f1f36513644e98add4bb0ec34",
+        "uncompressed_export_input_sha256": "0f8d50aeb443a5f5550c29bd8fc24ea8dec59a78f6284ae9a7016b63f0ff1f0b",
+        "fp_keys": [
+          "MACE_OMAT_0_MEDIUM"
+        ]
+      },
+      {
+        "source_results_file": "contributions/mace-models/mace_mh_1_omat_pbe/neb_results.json.gz",
+        "source_results_sha256": "7c98976b99c9a1fbf016f8eb61eeb4e66a93d1bc16e96d420e213284b1af3fc1",
+        "uncompressed_export_input_sha256": "756a1f8d90264e8d1c6b7624c4cc661cad37a051a1afd65498a11456560c0bbf",
+        "fp_keys": [
+          "MACE_MH_1_OMAT_PBE"
         ]
       }
     ]

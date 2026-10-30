@@ -1,0 +1,115 @@
+{
+  "device": "cpu",
+  "engine_sha256": "7145f7aa4cd182aaeed808c84469f97353e01a9e93779f399ec765623a6ac6d3",
+  "models": {
+    "mace_omat_0_medium": {
+      "profile": {
+        "reference_sha256": "1b6addae634f59ec318d31214e17ecd8b8ecdab8a8c0fa9faedf8e7981e4adaa",
+        "results_sha256": "1b2e74c29d90cf4115bf9426c842a8ac230e811be199548744a94b8ced07f75f",
+        "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+        "model": "MACE-OMAT-0 Medium",
+        "weights_sha256": "d4b14be9afa294eebdbe31a0280b26a0fa29715771e978cbfd3ca24e0d90307a",
+        "versions": {
+          "mace-torch": "0.3.16",
+          "torch": "2.7.1",
+          "torchmetrics": "1.3.2",
+          "numpy": "1.26.4",
+          "e3nn": "0.4.4",
+          "ase": "3.23.0",
+          "pymatgen": "2024.10.29",
+          "matscipy": "1.1.1"
+        },
+        "protocol": "full fixed-cell relaxation from initial_structure",
+        "dtype": "float64",
+        "device": "cpu",
+        "dispersion_correction": false,
+        "threads_per_worker": 1,
+        "model_source": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_omat_0/mace-omat-0-medium.model",
+        "energy_func_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+        "optimizer": "ASE FIRE",
+        "fmax": 0.01,
+        "max_steps": 10000,
+        "fixed_cell": true
+      },
+      "cases": [
+        {
+          "id": "ordering||mp-16364_Sn2+2_Sb3+2_Te2-5||ordered_9",
+          "seconds": 47.688085299916565,
+          "original_CPU_difference": {
+            "energy_total": 1.7763568394002505e-14,
+            "forces": 6.683542608243442e-14,
+            "positions": 3.147482274812319e-14
+          },
+          "steps": 124,
+          "path": "outputs/round2/relaxation_acceleration/calibration/mace_omat_0_medium/cpu/records/8594120c3f002bac9b0f113b11829cfaac4701b4b0115ea67e52c0b2f404f5c9.json"
+        },
+        {
+          "id": "ordering||mp-1481_Sn2+8_Sb3+2_Te2-11||ordered_94",
+          "seconds": 51.282328800298274,
+          "original_CPU_difference": {
+            "energy_total": 0.0,
+            "forces": 0.0,
+            "positions": 0.0
+          },
+          "steps": 64,
+          "path": "outputs/round2/relaxation_acceleration/calibration/mace_omat_0_medium/cpu/records/f61e745cff81eeb59c4326a0740661614aa2435e625cc5829e32d4ee21f01cef.json"
+        }
+      ]
+    },
+    "mace_mh_1_omat_pbe": {
+      "profile": {
+        "reference_sha256": "1b6addae634f59ec318d31214e17ecd8b8ecdab8a8c0fa9faedf8e7981e4adaa",
+        "results_sha256": "1b2e74c29d90cf4115bf9426c842a8ac230e811be199548744a94b8ced07f75f",
+        "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+        "model": "MACE-MH-1 (omat_pbe)",
+        "weights_sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+        "versions": {
+          "mace-torch": "0.3.16",
+          "torch": "2.7.1",
+          "torchmetrics": "1.3.2",
+          "numpy": "1.26.4",
+          "e3nn": "0.4.4",
+          "ase": "3.23.0",
+          "pymatgen": "2024.10.29",
+          "matscipy": "1.1.1"
+        },
+        "protocol": "full fixed-cell relaxation from initial_structure",
+        "dtype": "float64",
+        "device": "cpu",
+        "dispersion_correction": false,
+        "threads_per_worker": 1,
+        "model_source": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_mh_1/mace-mh-1.model",
+        "energy_func_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+        "optimizer": "ASE FIRE",
+        "fmax": 0.01,
+        "max_steps": 10000,
+        "fixed_cell": true
+      },
+      "cases": [
+        {
+          "id": "ordering||mp-1201_Sb3+2_Sn2+2_Te2-5||ordered_7",
+          "seconds": 42.4410694995895,
+          "original_CPU_difference": {
+            "energy_total": 0.0,
+            "forces": 0.0,
+            "positions": 0.0
+          },
+          "steps": 79,
+          "path": "outputs/round2/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cpu/records/f640668b68b7100383b4a2c9dbb45a7a4ec9be154aa92d88c8bffffcdb8f7ba0.json"
+        },
+        {
+          "id": "ordering||mp-1198150_Bi3+8_Sb3+8_Se2-24||ordered_973",
+          "seconds": 153.7519878000021,
+          "original_CPU_difference": {
+            "energy_total": 0.0,
+            "forces": 0.0,
+            "positions": 0.0
+          },
+          "steps": 73,
+          "path": "outputs/round2/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cpu/records/ebacb40f9748add49ba71868c6434cc4030e376d9e4926b7b5c63c45bf85203c.json"
+        }
+      ]
+    }
+  },
+  "pass": true
+}

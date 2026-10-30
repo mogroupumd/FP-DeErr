@@ -15,5 +15,50 @@
       "matpes_pbe": "outputs/force_benchmarks/matpes_pbe/mace_omat_0_small_cuda",
       "omat24": "outputs/force_benchmarks/omat24/mace_omat_0_small_cpu"
     }
+  },
+  "mace_omat_0_medium": {
+    "display_name": "MACE-OMAT-0 Medium",
+    "fp_key": "MACE_OMAT_0_MEDIUM",
+    "checkpoint": "mace-omat-0-medium.model",
+    "url": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_omat_0/mace-omat-0-medium.model",
+    "bytes": 79463999,
+    "expected_sha256": null,
+    "head": "default",
+    "cutoff_angstrom": 6.0,
+    "dtype": "float64",
+    "dispersion": false,
+    "reason": "Larger distinct checkpoint than the completed Small run; not listed in the pinned upstream model roster.",
+    "training_overlap": "OMat24 training data; structure-level overlap is not audited.",
+    "sha256": "d4b14be9afa294eebdbe31a0280b26a0fa29715771e978cbfd3ca24e0d90307a",
+    "source": "Official GitHub release asset",
+    "checksum_note": "Locally pinned SHA-256; release API supplied no digest.",
+    "head_note": "The official Medium checkpoint exposes one head named default; it is the OMat PBE(+U) model, not a selectable omat_pbe head.",
+    "training": "OMat24",
+    "force_folders": {
+      "matpes_pbe": "outputs/force_benchmarks/matpes_pbe/mace_omat_0_medium_cuda",
+      "omat24": "outputs/force_benchmarks/omat24/mace_omat_0_medium_cuda"
+    }
+  },
+  "mace_mh_1_omat_pbe": {
+    "display_name": "MACE-MH-1 (omat_pbe)",
+    "fp_key": "MACE_MH_1_OMAT_PBE",
+    "checkpoint": "mace-mh-1.model",
+    "url": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_mh_1/mace-mh-1.model",
+    "bytes": 59208139,
+    "expected_sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+    "head": "omat_pbe",
+    "cutoff_angstrom": 6.0,
+    "dtype": "float64",
+    "dispersion": false,
+    "reason": "Distinct multi-head cross-domain model; evaluate only its PBE/OMat head on the existing PBE-reference workflow.",
+    "training_overlap": "OMat pretraining and cross-domain fine-tuning including MatPES-related data. No unseen-data claim; exact structure-level overlap remains unaudited.",
+    "sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+    "source": "Official GitHub release asset",
+    "checksum_note": "Matches release API SHA-256.",
+    "training": "OMat pretraining + cross-domain fine-tuning",
+    "force_folders": {
+      "matpes_pbe": "outputs/force_benchmarks/matpes_pbe/mace_mh_1_omat_pbe_cuda",
+      "omat24": "outputs/force_benchmarks/omat24/mace_mh_1_omat_pbe_cuda"
+    }
   }
 }

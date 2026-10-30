@@ -776,10 +776,12 @@ jupyter lab analysis/neb_analysis.ipynb</code></pre>
   // ones already published on the Force Prediction leaderboard for the same FPs.
   // Number of FP records both leaderboard tables expect to find in the summary
   // JSON. Bump this in one place when a wave of potentials is added.
-  const EXPECTED_FP_COUNT = 16;
+  const EXPECTED_FP_COUNT = 18;
 
   const FP_PROVENANCE = {
     "MACE-OMAT-0 Small": ["mace-omat-0-small.model (head omat_pbe)", "OMat24"],
+    "MACE-OMAT-0 Medium": ["mace-omat-0-medium.model (head default)", "OMat24"],
+    "MACE-MH-1 (omat_pbe)": ["mace-mh-1.model (head omat_pbe)", "OMat pretraining + cross-domain fine-tuning"],
     "MACE":             [">=v0.3.10 (MACE-MPA-0, medium)", "MPTrj + sAlex"],
     "CHGNet":           ["v0.3.0",                         "MPTrj"],
     "M3GNet":           ["MP-2021.2.8-PES",                "MP-2021.2.8"],

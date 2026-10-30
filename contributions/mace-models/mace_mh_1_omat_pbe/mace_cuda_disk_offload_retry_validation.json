@@ -1,0 +1,8 @@
+{
+  "validation_pass": true,
+  "ordering_and_successful_partitions_preserved": true,
+  "direct_and_wrapped_singleton_oom_offloaded": true,
+  "unrecoverable_and_unrelated_failures_propagate": true,
+  "wrapper_sha256": "7c02767b0fa255e856b1be047e27feca3fdcaa18e1ac5010c65f95d1786849c5",
+  "validator_sha256": "36e65c0b08cd3d89bdc1be6f3249d7773193c365ca1563daaf0d8598ea8362ff"
+}

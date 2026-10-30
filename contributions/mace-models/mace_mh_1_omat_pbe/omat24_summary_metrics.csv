@@ -1,0 +1,2 @@
+FP model,Δ|F| MAE/RMSE (eV/Å),Δθ MAE/RMSE (°),"Δ|F| MAE/RMSE (eV/Å), |Δ|F|| < 1 eV/Å",Frac. |Δ|F|| < 0.01 eV/Å & Δθ < 1°/20° (%),Frac. |Δ|F|| < 0.01 eV/Å (%) ↑,Frac. |Δ|F|| > 1 eV/Å (%) ↓,"Δ|F| MAE/RMSE (eV/Å), on FE atoms","Δθ MAE/RMSE (°), on FE atoms"
+MACE-MH-1 (omat_pbe),0.20 / 0.83,5 / 10,0.14 / 0.22,1.4 / 7.3,7.5,2.56,0.23 / 0.92,4 / 7

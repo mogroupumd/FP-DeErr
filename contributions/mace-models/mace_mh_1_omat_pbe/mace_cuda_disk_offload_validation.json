@@ -1,0 +1,192 @@
+{
+  "validation_pass": true,
+  "device": "cuda",
+  "dtype": "float64",
+  "weights_sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+  "wrapper_sha256": "7c02767b0fa255e856b1be047e27feca3fdcaa18e1ac5010c65f95d1786849c5",
+  "offload_implementation_sha256": "9bae8663812e39842ae91179324a965b8a639b8d129913626795571df46a9453",
+  "batch_implementation_sha256": "c15854347cc330b7e1e9d79d9bb54b7ad7a6e106a6125a62fbe605ea2bf50465",
+  "validator_sha256": "879004c0d5aa95d1ac33f7ce2df9fcd7d79cf240b0c8c37674b0039b6dd372b0",
+  "checks": [
+    {
+      "deterministic": false,
+      "batch_size": 1,
+      "offload_difference": {
+        "energy_total": {
+          "equal": false,
+          "max_abs": 3.552713678800501e-15
+        },
+        "forces": {
+          "equal": false,
+          "max_abs": 3.3584246494910985e-15
+        },
+        "stress": {
+          "equal": false,
+          "max_abs": 1.717376241217039e-16
+        }
+      },
+      "baseline_repeat_difference": {
+        "energy_total": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "forces": {
+          "equal": false,
+          "max_abs": 5.467848396278896e-15
+        },
+        "stress": {
+          "equal": false,
+          "max_abs": 2.498001805406602e-16
+        }
+      },
+      "statistics": {
+        "saved_tensors": 392,
+        "saved_tensor_bytes": 2236469248,
+        "unpack_calls": 392,
+        "minimum_bytes": 1048576
+      }
+    },
+    {
+      "deterministic": false,
+      "batch_size": 16,
+      "offload_difference": {
+        "energy_total": {
+          "equal": false,
+          "max_abs": 1.7763568394002505e-15
+        },
+        "forces": {
+          "equal": false,
+          "max_abs": 3.4416913763379853e-15
+        },
+        "stress": {
+          "equal": false,
+          "max_abs": 1.6306400674181987e-16
+        }
+      },
+      "baseline_repeat_difference": {
+        "energy_total": {
+          "equal": false,
+          "max_abs": 1.7763568394002505e-15
+        },
+        "forces": {
+          "equal": false,
+          "max_abs": 2.9976021664879227e-15
+        },
+        "stress": {
+          "equal": false,
+          "max_abs": 2.3592239273284576e-16
+        }
+      },
+      "statistics": {
+        "saved_tensors": 76,
+        "saved_tensor_bytes": 632676352,
+        "unpack_calls": 76,
+        "minimum_bytes": 1048576
+      }
+    },
+    {
+      "deterministic": true,
+      "batch_size": 1,
+      "offload_difference": {
+        "energy_total": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "forces": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "stress": {
+          "equal": true,
+          "max_abs": 0.0
+        }
+      },
+      "baseline_repeat_difference": {
+        "energy_total": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "forces": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "stress": {
+          "equal": true,
+          "max_abs": 0.0
+        }
+      },
+      "statistics": {
+        "saved_tensors": 392,
+        "saved_tensor_bytes": 2236469248,
+        "unpack_calls": 392,
+        "minimum_bytes": 1048576
+      }
+    },
+    {
+      "deterministic": true,
+      "batch_size": 16,
+      "offload_difference": {
+        "energy_total": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "forces": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "stress": {
+          "equal": true,
+          "max_abs": 0.0
+        }
+      },
+      "baseline_repeat_difference": {
+        "energy_total": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "forces": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "stress": {
+          "equal": true,
+          "max_abs": 0.0
+        }
+      },
+      "statistics": {
+        "saved_tensors": 76,
+        "saved_tensor_bytes": 632676352,
+        "unpack_calls": 76,
+        "minimum_bytes": 1048576
+      }
+    }
+  ],
+  "dense_case": {
+    "index": 144862,
+    "source_id": "matpes-20240214_677260_2",
+    "atoms": 240,
+    "original_singleton_oom": true,
+    "all_fields_finite": true,
+    "direct_ASE_differences": {
+      "energy_total": {
+        "equal": false,
+        "max_abs": 1.1368683772161603e-13
+      },
+      "forces": {
+        "equal": false,
+        "max_abs": 8.604228440844963e-15
+      },
+      "stress": {
+        "equal": false,
+        "max_abs": 1.5543122344752192e-15
+      }
+    },
+    "statistics": {
+      "saved_tensors": 105,
+      "saved_tensor_bytes": 7256902912,
+      "unpack_calls": 105,
+      "minimum_bytes": 1048576
+    },
+    "seconds": 54.114835400134325
+  }
+}
