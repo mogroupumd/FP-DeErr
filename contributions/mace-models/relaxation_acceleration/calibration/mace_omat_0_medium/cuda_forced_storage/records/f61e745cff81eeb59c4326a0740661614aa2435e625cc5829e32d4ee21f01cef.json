@@ -1,0 +1,1021 @@
+{
+  "id": "ordering||mp-1481_Sn2+8_Sb3+2_Te2-11||ordered_94",
+  "provenance": {
+    "reference_sha256": "1b6addae634f59ec318d31214e17ecd8b8ecdab8a8c0fa9faedf8e7981e4adaa",
+    "results_sha256": "1b2e74c29d90cf4115bf9426c842a8ac230e811be199548744a94b8ced07f75f",
+    "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+    "model": "MACE-OMAT-0 Medium",
+    "weights_sha256": "d4b14be9afa294eebdbe31a0280b26a0fa29715771e978cbfd3ca24e0d90307a",
+    "versions": {
+      "mace-torch": "0.3.16",
+      "torch": "2.7.1+cu126",
+      "torchmetrics": "1.3.2",
+      "numpy": "1.26.4",
+      "e3nn": "0.4.4",
+      "ase": "3.23.0",
+      "pymatgen": "2024.10.29",
+      "matscipy": "1.1.1"
+    },
+    "protocol": "full fixed-cell relaxation from initial_structure",
+    "dtype": "float64",
+    "device": "cuda",
+    "dispersion_correction": false,
+    "threads_per_worker": 1,
+    "model_source": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_omat_0/mace-omat-0-medium.model",
+    "energy_func_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+    "optimizer": "ASE FIRE",
+    "fmax": 0.01,
+    "max_steps": 10000,
+    "fixed_cell": true
+  },
+  "result": {
+    "status": "success",
+    "mode": "relaxation",
+    "energy_total": -74.61897177400363,
+    "forces": [
+      [
+        -0.0009440758820498246,
+        -0.002232370555599654,
+        0.0025714970863458114
+      ],
+      [
+        0.005841766376073242,
+        -0.003665864533698689,
+        -0.004137599822718621
+      ],
+      [
+        -0.000473332032034271,
+        0.003027307747200794,
+        -0.002459425554908204
+      ],
+      [
+        4.017661898520625e-06,
+        -0.00034073565001907155,
+        -0.0007337141225020466
+      ],
+      [
+        -4.017661848279563e-06,
+        0.0003407356499011624,
+        0.0007337141223155499
+      ],
+      [
+        0.00047333203200495416,
+        -0.0030273077472160945,
+        0.002459425554933538
+      ],
+      [
+        -0.005841766376012282,
+        0.0036658645336826307,
+        0.0041375998226333525
+      ],
+      [
+        0.0009440758820211774,
+        0.0022323705555101804,
+        -0.0025714970863607786
+      ],
+      [
+        0.008517952556753597,
+        0.0018382947661062035,
+        3.5923206175653144e-05
+      ],
+      [
+        -0.008517952556660997,
+        -0.0018382947660259968,
+        -3.592320628785506e-05
+      ],
+      [
+        -0.0024769805998605954,
+        -0.0005126419056403278,
+        -0.0018328112185943823
+      ],
+      [
+        -0.0019217708181189924,
+        0.0038870469628665416,
+        0.0047093501037856755
+      ],
+      [
+        0.005000796824477904,
+        -0.000504597303843099,
+        -0.0011182861590215906
+      ],
+      [
+        0.0024769805998087757,
+        0.0005126419057584,
+        0.0018328112187698115
+      ],
+      [
+        -1.4511308821241187e-13,
+        -1.9926768568545583e-14,
+        2.624067413012354e-13
+      ],
+      [
+        0.0022431949025886605,
+        -0.002534090675265832,
+        -0.0029036696744697346
+      ],
+      [
+        -0.008684676317268936,
+        0.003834873390293436,
+        -0.001332046745025569
+      ],
+      [
+        0.0019217708179499332,
+        -0.003887046962864682,
+        -0.004709350103752008
+      ],
+      [
+        -0.005000796824429249,
+        0.000504597303790863,
+        0.001118286159061753
+      ],
+      [
+        0.008684676317331164,
+        -0.0038348733902403816,
+        0.0013320467449585427
+      ],
+      [
+        -0.002243194902479248,
+        0.0025340906753235914,
+        0.002903669674398743
+      ]
+    ],
+    "relaxed_structure": {
+      "@module": "pymatgen.core.structure",
+      "@class": "Structure",
+      "charge": 0,
+      "lattice": {
+        "matrix": [
+          [
+            3.9047,
+            0.0,
+            7.8094
+          ],
+          [
+            -7.8094,
+            3.9047,
+            -0.0
+          ],
+          [
+            -3.9047,
+            -7.8094,
+            3.9047
+          ]
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "a": 8.731174631743428,
+        "b": 8.731174631743428,
+        "c": 9.564522598645476,
+        "alpha": 90.0,
+        "beta": 79.48026510934139,
+        "gamma": 113.57817847820183,
+        "volume": 654.8709151250531
+      },
+      "properties": {},
+      "sites": [
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.37817561810715516,
+            0.19968454796792107,
+            0.11048281891538166
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            -0.5141564358965647,
+            -0.08309627158744015,
+            3.3847269350649087
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.8580041793323144,
+            0.28605530430648823,
+            0.15427339760043207
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            0.513937289977392,
+            -0.08782252449526973,
+            7.302889173688183
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.8151252715207636,
+            0.735550637353569,
+            0.38315485977518343
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            -4.057494280605994,
+            -0.12010498825383698,
+            7.861744076378411
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.30515448910966503,
+            0.9043675342092728,
+            0.45199095691503555
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            -7.635920177493526,
+            0.0015057318946691822,
+            4.147962556719158
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.6948455108902687,
+            0.09563246579068241,
+            0.548009043084973
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            -0.17347982250641736,
+            -3.906205731894911,
+            7.5661374432803585
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.18487472847924102,
+            0.26444936264644053,
+            0.6168451402248324
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            -3.7519057193941237,
+            -3.78459501174625,
+            3.852355923621688
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.1419958206676551,
+            0.7139446956934634,
+            0.8457266023995453
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            -8.323337289977045,
+            -3.816877475504743,
+            4.411210826311491
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sn",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.6218243818928217,
+            0.8003154520320587,
+            0.889517181084647
+          ],
+          "properties": {},
+          "label": "Sn",
+          "xyz": [
+            -7.295243564103479,
+            -3.8216037284128626,
+            8.329373064935023
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sb",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.3026357319131352,
+            0.573073620692821,
+            0.25022307649091824
+          ],
+          "properties": {},
+          "label": "Sb",
+          "xyz": [
+            -4.270705437811386,
+            0.2835884731710814,
+            3.3404495315765264
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Sb",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.6973642680868215,
+            0.426926379307142,
+            0.7497769235090574
+          ],
+          "properties": {},
+          "label": "Sb",
+          "xyz": [
+            -3.5386945621884,
+            -4.188288473171037,
+            8.37365046842304
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.46742457407329313,
+            0.7044009695460518,
+            0.6081173966340632
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -6.050312195825976,
+            -1.9985575314875845,
+            6.024821467405002
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.9599427579673327,
+            0.8681469913386415,
+            0.664288548451913
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -5.625266122265127,
+            -1.797841433200376,
+            10.090424469210273
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.6280104410458649,
+            0.9003035826206243,
+            0.211323873443799
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -5.403794757601716,
+            1.8651027417867478,
+            5.729541066939579
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.5325754259267818,
+            0.29559903045401775,
+            0.3918826033659317
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -1.759087804174255,
+            -1.9061424685121044,
+            5.689278532595563
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            8.115730310009894e-14,
+            0.5000000000000763,
+            0.5000000000000506
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -5.857050000000476,
+            -1.9523500000000975,
+            1.9523500000008314
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.7503326950879805,
+            0.5580645511272446,
+            0.023863673081437442
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -1.5215057153441558,
+            1.9927136842243747,
+            5.952828633301164
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.16502422924525992,
+            0.8080630114641842,
+            0.1641352351236251
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -6.307016026381653,
+            1.8734459356897626,
+            1.9296390684551517
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.0400572420326846,
+            0.13185300866142122,
+            0.33571145154810356
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -2.184133877735359,
+            -2.1068585667995086,
+            1.623675530789927
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.37198955895413893,
+            0.09969641737935636,
+            0.7886761265562128
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -2.4056052423981633,
+            -5.769802741786915,
+            5.984558933060496
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.834975770754721,
+            0.19193698853579305,
+            0.8358647648763428
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -1.5023839736181193,
+            -5.778145935689601,
+            9.784460931544574
+          ]
+        },
+        {
+          "species": [
+            {
+              "element": "Te",
+              "occu": 1
+            }
+          ],
+          "abc": [
+            0.24966730491202083,
+            0.4419354488727298,
+            0.9761363269185146
+          ],
+          "properties": {},
+          "label": "Te",
+          "xyz": [
+            -6.287894284655453,
+            -5.8974136842241,
+            5.76127136669866
+          ]
+        }
+      ]
+    },
+    "converged": true,
+    "n_steps": 64,
+    "fmax_requested": 0.01,
+    "max_steps": 10000,
+    "fixed_cell": true,
+    "n_atoms": 21,
+    "max_force_eV_per_A": 0.009586668096202204,
+    "published_energy_total": null,
+    "seconds": 155.08712329994887
+  },
+  "execution": {
+    "device": "cuda",
+    "dtype": "float64",
+    "head": "default",
+    "engine_sha256": "7145f7aa4cd182aaeed808c84469f97353e01a9e93779f399ec765623a6ac6d3",
+    "versions": {
+      "mace-torch": "0.3.16",
+      "torch": "2.7.1+cu126",
+      "torchmetrics": "1.3.2",
+      "numpy": "1.26.4",
+      "e3nn": "0.4.4",
+      "ase": "3.23.0",
+      "pymatgen": "2024.10.29",
+      "matscipy": "1.1.1"
+    },
+    "threads": 1,
+    "offload_events": [
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111549440,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111193088,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110836736,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110480384,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110658560,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110658560,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 110658560,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111014912,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111014912,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111371264,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111371264,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111371264,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 111371264,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112440320,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112083968,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112083968,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112083968,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112440320,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112796672,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      },
+      {
+        "saved_tensors": 21,
+        "saved_tensor_bytes": 112974848,
+        "unpack_calls": 21,
+        "minimum_bytes": 1048576
+      }
+    ],
+    "wall_seconds": 155.10448099998757
+  }
+}

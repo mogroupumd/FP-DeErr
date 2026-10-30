@@ -1,0 +1,152 @@
+{
+  "prepared_utc": "2026-10-28T23:35:08.066010+00:00",
+  "upstream_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+  "mode": "full_contribution",
+  "models": [
+    "mace_omat_0_small",
+    "mace_omat_0_medium",
+    "mace_mh_1_omat_pbe"
+  ],
+  "audit_gate_passed": true,
+  "published": false,
+  "force_proofs": {
+    "mace_omat_0_small": {
+      "matpes_pbe": {
+        "structures": 434712,
+        "atoms": 3881535,
+        "finite_angle_atoms": 3664025,
+        "summary_sha256": "105e37ff90abd83e11257a5a3c802a19cc55bd78e8d8e1f505ef1a9af10b7284"
+      },
+      "omat24": {
+        "structures": 117004,
+        "atoms": 1657765,
+        "finite_angle_atoms": 1657763,
+        "summary_sha256": "e62b87e3bf13ed95114f888a0c7bc244a9f87b3333cdc7a1948e1ee9af2b4775"
+      }
+    },
+    "mace_omat_0_medium": {
+      "matpes_pbe": {
+        "structures": 434712,
+        "atoms": 3881535,
+        "finite_angle_atoms": 3664026,
+        "summary_sha256": "f46121be36abe17336a3465d59264288f0038a744d3d40c4f331919d5a34a76a"
+      },
+      "omat24": {
+        "structures": 117004,
+        "atoms": 1657765,
+        "finite_angle_atoms": 1657763,
+        "summary_sha256": "bb2a7ff2baf5e46ada3273ae025c1974b7dd869c65a448090dc9ae55d04ac839"
+      }
+    },
+    "mace_mh_1_omat_pbe": {
+      "matpes_pbe": {
+        "structures": 434712,
+        "atoms": 3881535,
+        "finite_angle_atoms": 3664328,
+        "summary_sha256": "e99dc8f8c1da8455ec9024a6c046e6ce15ace2d5606edfab415c3ba6172fa9f0"
+      },
+      "omat24": {
+        "structures": 117004,
+        "atoms": 1657765,
+        "finite_angle_atoms": 1657763,
+        "summary_sha256": "ba241193fb7cb9e5e3c34460023a08c784c5026eb8aafd052103404856d4f0b5"
+      }
+    }
+  },
+  "existing_html_content_preserved": true,
+  "existing_neb_model_records_preserved": true,
+  "neb_record_count": 18,
+  "force_added_rows": 36,
+  "phase_added_rows": 15,
+  "audit_sha256": {
+    "mace_omat_0_small": "07e17fc79216d56764a2b4927eb090f8a732e71d16f495f02d5ddeb7d0a369a8",
+    "mace_omat_0_medium": "928cb0018e6f8b8922bf0c92b88ef8a76c192a552dde74f6735f5078230ec682",
+    "mace_mh_1_omat_pbe": "2ade76ea55cfd965fdb572e7d001ad9b1d9089e8e1f672130077d9fa95525b67"
+  },
+  "files_sha256": {
+    "docs/force-error.html": "6c81aeaed1d4309255e4bdfbdab11c761d1c235326b914b572e23365bc6de9b8",
+    "docs/phase-stability-ordering.html": "c5377ecde978405fe54d6c0d169b76f3032a5dc984f82642a9c6eb967ababd87",
+    "contributions/mace-models/mace_omat_0_small/neb_results.json.gz": "5823ce99c07f738d4ee7ec8c603e52c1072dc885d286a9db3112f3459281d300",
+    "contributions/mace-models/mace_omat_0_medium/neb_results.json.gz": "e1e1236d29216162ac00c26fa513aaf2397acc2f1f36513644e98add4bb0ec34",
+    "contributions/mace-models/mace_mh_1_omat_pbe/neb_results.json.gz": "7c98976b99c9a1fbf016f8eb61eeb4e66a93d1bc16e96d420e213284b1af3fc1",
+    "docs/data/ion_migration_neb_leaderboard_summary.json": "c96bfd352ca764baa021ebee0b2f6645e9b07c5ecee2e8f1c359b42bf669226b",
+    "Ion_migration_NEB/data/ion_migration_neb_leaderboard_summary.json": "c96bfd352ca764baa021ebee0b2f6645e9b07c5ecee2e8f1c359b42bf669226b",
+    "docs/ion-migration-neb.html": "ae775db5fab0d5560a5efca295f1988076a451da641361e550a669a440c4cb85",
+    "Ion_migration_NEB/scripts/export_neb_leaderboard.py": "7d3e0a61cb24b587ae6dc037c5c443a9d2e9b6ef691d03cf7edfe158da0d8936",
+    "contributions/mace-models/README.md": "ad35af6b53cc33cf0458bda4a22407264a26189f5480d407df40a77821a511db",
+    "contributions/mace-models/checkpoints.json": "82da815ba121440123aca3ef9c467ba0a3f30c22539f4ea4013c3f5054b7c85f",
+    "contributions/mace-models/mace_omat_0_small/scientific_audit.json": "07e17fc79216d56764a2b4927eb090f8a732e71d16f495f02d5ddeb7d0a369a8",
+    "contributions/mace-models/mace_omat_0_small/hull_metrics.csv": "91f13423437fbf5f59cb0cb51666179aee23d6d82d3e2d90f467e4663814fd3d",
+    "contributions/mace-models/mace_omat_0_small/ordering_metrics.csv": "1548fb898bcb952cf423a6f0aae49aac264c43ee2532ba12a6ed791a9267d9a9",
+    "contributions/mace-models/mace_omat_0_small/rmsd_metrics.csv": "a8e5c9ca1defab242aee0f73e3d28fa64d63e4d5f742a93c63ff12c2fc108b6f",
+    "contributions/mace-models/mace_omat_0_small/matpes_pbe_summary_metrics.csv": "a4aebeeaf3a7ca79049bf532f4c0b62108e4206d6d58e1ed3093c040ed489ddc",
+    "contributions/mace-models/mace_omat_0_small/matpes_pbe_summary.json": "105e37ff90abd83e11257a5a3c802a19cc55bd78e8d8e1f505ef1a9af10b7284",
+    "contributions/mace-models/mace_omat_0_small/omat24_summary_metrics.csv": "27dd23104ff8b46640121550f84e2e01cdce46fe8e380cafdf1053eb92ca9b08",
+    "contributions/mace-models/mace_omat_0_small/omat24_summary.json": "e62b87e3bf13ed95114f888a0c7bc244a9f87b3333cdc7a1948e1ee9af2b4775",
+    "contributions/mace-models/mace_omat_0_medium/scientific_audit.json": "928cb0018e6f8b8922bf0c92b88ef8a76c192a552dde74f6735f5078230ec682",
+    "contributions/mace-models/mace_omat_0_medium/relaxation_summary.json": "a15620dc7a235d4bdf29b5cd38eab8e218012b3762ce844f11b917d7beb65aa8",
+    "contributions/mace-models/relaxation_acceleration/validation.json": "83b0363a936900b26f1cadf227317200bbbf3f030026322ca6265d2a10c001e6",
+    "contributions/mace-models/relaxation_acceleration/calibration_cpu.json": "7c997b48e5417cad602379153a0e902cc7de698a3fc8658eee4c1f594f08669d",
+    "contributions/mace-models/relaxation_acceleration/calibration_cuda.json": "e79bb18d53326cf032923c8ef241512e519c9b7c957529ff3041f450e1126eab",
+    "contributions/mace-models/relaxation_acceleration/round2_relax_engine.py": "7145f7aa4cd182aaeed808c84469f97353e01a9e93779f399ec765623a6ac6d3",
+    "contributions/mace-models/relaxation_acceleration/round2_joint_relaxation.py": "a891ee70497f055f83455d8cff9733d26e1ac517e5b84beabdb73367dd2660cc",
+    "contributions/mace-models/relaxation_acceleration/round2_relax_gpu_worker.py": "c933c976296683822a2950362729298122ee130159eea419127b45614bfde898",
+    "contributions/mace-models/relaxation_acceleration/round2_relax_analysis.py": "c7e63b9b3d60df945e1a222a1ce51282a7fca3c1975bfdd8b12c722619e80305",
+    "contributions/mace-models/relaxation_acceleration/calibrate_round2_relaxation.py": "5434ee59bf779911127af54093f958b33bbc76337b92a9e70364d7f2c3354a9c",
+    "contributions/mace-models/relaxation_acceleration/cuda_saved_tensor_offload.py": "9bae8663812e39842ae91179324a965b8a639b8d129913626795571df46a9453",
+    "contributions/mace-models/relaxation_acceleration/relaxation_runner.py": "a9b4acd7b1ff81fa9f85c82d0ed734ebe357078e5686b05590944abdd9442134",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cpu/records/ebacb40f9748add49ba71868c6434cc4030e376d9e4926b7b5c63c45bf85203c.json": "b5d6094f6780c743ba6902027d2343d0b81e30f10001d7ddfeea5cebd6c97b48",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cpu/records/ebacb40f9748add49ba71868c6434cc4030e376d9e4926b7b5c63c45bf85203c.trace.json": "3e0ae9b729a3c8a5950ad5407fbfc148605e21341ad96bc6dcbe16640ed1ce14",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cpu/records/f640668b68b7100383b4a2c9dbb45a7a4ec9be154aa92d88c8bffffcdb8f7ba0.json": "5ae480cdbe507f48ace3bb3a371a3d2249931b69ec96d0ced0871ade78cb49ac",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cpu/records/f640668b68b7100383b4a2c9dbb45a7a4ec9be154aa92d88c8bffffcdb8f7ba0.trace.json": "944b3780156df67bd7483e5e75025ecc6c0ad0a0978da1a7d5fc167d00f88734",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cuda/records/ebacb40f9748add49ba71868c6434cc4030e376d9e4926b7b5c63c45bf85203c.json": "868a2c8c458809d4b6f3d002285d32fd43f191194fead75d91bda03e0b288666",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cuda/records/ebacb40f9748add49ba71868c6434cc4030e376d9e4926b7b5c63c45bf85203c.trace.json": "f01587e0e2bf6bd724b4ab9677e3a91ced363daadb883cb7dd9b4dd55cf905ea",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cuda/records/f640668b68b7100383b4a2c9dbb45a7a4ec9be154aa92d88c8bffffcdb8f7ba0.json": "dfd6707e5a5b4455ce20a32a115f78703c4f0628f15714fbd88d410e75121ce3",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cuda/records/f640668b68b7100383b4a2c9dbb45a7a4ec9be154aa92d88c8bffffcdb8f7ba0.trace.json": "7441e0f56e7ada3d76be676a1e4875ee3a6b0793b59e1225172641271fbd57f0",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cuda_forced_storage/records/ebacb40f9748add49ba71868c6434cc4030e376d9e4926b7b5c63c45bf85203c.json": "f7c8f83fb64c4088e8141bf668161c60a409b6c013944037bf7cce48be0919c9",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_mh_1_omat_pbe/cuda_forced_storage/records/ebacb40f9748add49ba71868c6434cc4030e376d9e4926b7b5c63c45bf85203c.trace.json": "43d3bc89e96ce67cff8eb2cf16400a3225585759ebb6f9523ace0d7cf2ec64be",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cpu/records/8594120c3f002bac9b0f113b11829cfaac4701b4b0115ea67e52c0b2f404f5c9.json": "74015c19a8546d7ec110c4838e458b3b4cc0212396415bc28d6b0008175aeeca",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cpu/records/8594120c3f002bac9b0f113b11829cfaac4701b4b0115ea67e52c0b2f404f5c9.trace.json": "2f9c75e3f6e769523fc1c934144537a1f7089fcdf863df85d3680aef5eb2c16f",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cpu/records/f61e745cff81eeb59c4326a0740661614aa2435e625cc5829e32d4ee21f01cef.json": "596d7ec1ddb794c97942ae00baedab0597445774fd7cc72e9a2e3f0f4ae3cc64",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cpu/records/f61e745cff81eeb59c4326a0740661614aa2435e625cc5829e32d4ee21f01cef.trace.json": "6b658c1e23ba01a3737e0dd380982a3baa89defd8c66bb35fae29da49f2b53cc",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cuda/records/8594120c3f002bac9b0f113b11829cfaac4701b4b0115ea67e52c0b2f404f5c9.json": "19fac3da3bd235f6762f4a448ff3431b1c5448b755ef4bde94270f8a473aac9f",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cuda/records/8594120c3f002bac9b0f113b11829cfaac4701b4b0115ea67e52c0b2f404f5c9.trace.json": "419f9c2c3ea28cd3d03f4dc6eca5ffcc4f685d572d5f33364e0c23217500b506",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cuda/records/f61e745cff81eeb59c4326a0740661614aa2435e625cc5829e32d4ee21f01cef.json": "2261f663e8275ec089915dc03edbc2dbf3a6247bc642e33bdaef2bc9bf16ec5d",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cuda/records/f61e745cff81eeb59c4326a0740661614aa2435e625cc5829e32d4ee21f01cef.trace.json": "b71955eb7c1177dd46def25a939752024ef16e78251acb63a6d04341d52d4134",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cuda_forced_storage/records/f61e745cff81eeb59c4326a0740661614aa2435e625cc5829e32d4ee21f01cef.json": "00bd7967947719e17d1812976234827bcd5566ce0a53a06effe1b672c764505e",
+    "contributions/mace-models/relaxation_acceleration/calibration/mace_omat_0_medium/cuda_forced_storage/records/f61e745cff81eeb59c4326a0740661614aa2435e625cc5829e32d4ee21f01cef.trace.json": "8a76d07e46524fd7bb146408551ed5182e3bdadcde9c61454623328af121aa72",
+    "contributions/mace-models/mace_omat_0_medium/hull_metrics.csv": "27e8f597cb0d67a3ab589bf8ace8c9786f7d0c0485addadfee8bee9000b8e059",
+    "contributions/mace-models/mace_omat_0_medium/ordering_metrics.csv": "d74d716c2e96f7850302e0bfa099ae095d24fa7d04a46f9d986ca4f824bd1db1",
+    "contributions/mace-models/mace_omat_0_medium/rmsd_metrics.csv": "4da56d54241ae08b98f57e73c9598001d46339774217ae114eda01c10320d6eb",
+    "contributions/mace-models/mace_omat_0_medium/matpes_pbe_summary_metrics.csv": "c606c7121ff1d52697c7e0c63fa19744ee1cad71ad08597ca687e0a2ea79ece8",
+    "contributions/mace-models/mace_omat_0_medium/matpes_pbe_summary.json": "f46121be36abe17336a3465d59264288f0038a744d3d40c4f331919d5a34a76a",
+    "contributions/mace-models/mace_omat_0_medium/omat24_summary_metrics.csv": "91e0b6958c8cd867482c8e7b291b93a229ea5338b9db9170b6ddcb256b94cb99",
+    "contributions/mace-models/mace_omat_0_medium/omat24_summary.json": "bb2a7ff2baf5e46ada3273ae025c1974b7dd869c65a448090dc9ae55d04ac839",
+    "contributions/mace-models/mace_mh_1_omat_pbe/scientific_audit.json": "2ade76ea55cfd965fdb572e7d001ad9b1d9089e8e1f672130077d9fa95525b67",
+    "contributions/mace-models/mace_mh_1_omat_pbe/relaxation_summary.json": "818c7063f646a6e6c052bafb5a7ab950dd91a5ce60f1e1ce5adf0b75addaedae",
+    "contributions/mace-models/mace_mh_1_omat_pbe/mace_cuda_disk_offload_validation.json": "ce79ae1580086ec243b2bbe190622ce522282afa1fb1552bcb72dbd5132ff0c7",
+    "contributions/mace-models/mace_mh_1_omat_pbe/mace_cuda_disk_offload_retry_validation.json": "468f87ec8f25767489cad5ca0e4902080bf6ac3e71fd8e7bf82a3424c17f8c26",
+    "contributions/mace-models/mace_mh_1_omat_pbe/round2_mh1_force_offload.py": "7c02767b0fa255e856b1be047e27feca3fdcaa18e1ac5010c65f95d1786849c5",
+    "contributions/mace-models/mace_mh_1_omat_pbe/cuda_saved_tensor_offload.py": "9bae8663812e39842ae91179324a965b8a639b8d129913626795571df46a9453",
+    "contributions/mace-models/mace_mh_1_omat_pbe/validate_round2_mh1_offload.py": "879004c0d5aa95d1ac33f7ce2df9fcd7d79cf240b0c8c37674b0039b6dd372b0",
+    "contributions/mace-models/mace_mh_1_omat_pbe/verify_round2_mh1_offload_controls.py": "36e65c0b08cd3d89bdc1be6f3249d7773193c365ca1563daaf0d8598ea8362ff",
+    "contributions/mace-models/mace_mh_1_omat_pbe/hull_metrics.csv": "cb9017bfee0f3f53c8b0e50eb2e181958fafcadbff4716aaf615a379955ec809",
+    "contributions/mace-models/mace_mh_1_omat_pbe/ordering_metrics.csv": "d0efe102ef67f0ef5738fda2ca7c78b06bedae48684e25925de4dde71800e902",
+    "contributions/mace-models/mace_mh_1_omat_pbe/rmsd_metrics.csv": "c747ee41294025ae964fe4257a831eba28315784dfa88330e139cf1e5a1f3833",
+    "contributions/mace-models/mace_mh_1_omat_pbe/matpes_pbe_summary_metrics.csv": "6feaf646a6efaf23b7fa5c5c0db68ce9472dc1d85edff97536c3d8dc09823b32",
+    "contributions/mace-models/mace_mh_1_omat_pbe/matpes_pbe_summary.json": "e99dc8f8c1da8455ec9024a6c046e6ce15ace2d5606edfab415c3ba6172fa9f0",
+    "contributions/mace-models/mace_mh_1_omat_pbe/omat24_summary_metrics.csv": "5c81af18bcb2db34b74296d59ac686f80e9804684750f281a09708ee8fe4520c",
+    "contributions/mace-models/mace_mh_1_omat_pbe/omat24_summary.json": "ba241193fb7cb9e5e3c34460023a08c784c5026eb8aafd052103404856d4f0b5",
+    "contributions/mace-models/validate.py": "97dbe7c03454a1de6253c0475e43e5bef90b9b9ece7fafa7cc481f621bff8499",
+    ".gitattributes": "b9b3423cc599d1848c643cc5a99a6037e2938c1abb92d886654e45fddca62eb5"
+  },
+  "source_files_sha256": {
+    "docs/force-error.html": "dc1dffb6b7070fb3c05998ced078bb721c06cca9dccaccce8babe0f1898bdffe",
+    "docs/phase-stability-ordering.html": "59aceeb16f80925c663fe9b1919e23149e34a064bb37c5d4cbb990660d2ff2da",
+    "docs/data/ion_migration_neb_leaderboard_summary.json": "18fcf883d2121b34df8d3784099455e1ac3c13899083730b921b8a6138046427",
+    "Ion_migration_NEB/data/ion_migration_neb_leaderboard_summary.json": "18fcf883d2121b34df8d3784099455e1ac3c13899083730b921b8a6138046427",
+    "docs/ion-migration-neb.html": "17502656ec3524d54654f881c4d6001e4bbfd18e588bc32a2849f2ef9ff552ea",
+    "Ion_migration_NEB/scripts/export_neb_leaderboard.py": "031369a0c913ca488c4b4a4255ec90e36032494f958b049ac69d49c1ca7b967f"
+  },
+  "builder_sha256": "97923c097fb9a6adf83b46f56b581a861e948b691216d4a441ab8cb21422f9dc"
+}

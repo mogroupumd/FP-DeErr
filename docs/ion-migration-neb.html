@@ -505,12 +505,14 @@
   <p style="margin-top:1rem;font-size:0.85rem;color:var(--muted);">
     Endpoint structures were relaxed with a convergence threshold of 0.002 eV/&Aring; and fixed cell
     shape/volume; the full FP-NEB workflow uses a convergence threshold of 0.05 eV/&Aring; and a
-    maximum of 1000 NEB steps. Model versions and official sources for the 15 FPs evaluated here
+    maximum of 1000 NEB steps. Model versions and official sources for the original 15 FPs evaluated here
     are documented once on the <a href="index.html#models" style="color:var(--accent);">FP-DeErr home page</a>.
     See the <a href="https://github.com/mogroupumd/FP-DeErr/tree/main/Ion_migration_NEB" style="color:var(--accent);">Ion_migration_NEB README</a>
     for the full standardized-file schema.
   </p>
 </section>
+
+<p>Additional MACE checkpoint identities, heads, training exposure, and audited execution provenance: <a href="../contributions/mace-models/README.md">contribution record</a>.</p>
 
 <!-- ============== USE FP-DeErr ============== -->
 <section id="use-fp-deerr">
@@ -774,9 +776,12 @@ jupyter lab analysis/neb_analysis.ipynb</code></pre>
   // ones already published on the Force Prediction leaderboard for the same FPs.
   // Number of FP records both leaderboard tables expect to find in the summary
   // JSON. Bump this in one place when a wave of potentials is added.
-  const EXPECTED_FP_COUNT = 15;
+  const EXPECTED_FP_COUNT = 18;
 
   const FP_PROVENANCE = {
+    "MACE-OMAT-0 Small": ["mace-omat-0-small.model (head omat_pbe)", "OMat24"],
+    "MACE-OMAT-0 Medium": ["mace-omat-0-medium.model (head default)", "OMat24"],
+    "MACE-MH-1 (omat_pbe)": ["mace-mh-1.model (head omat_pbe)", "OMat pretraining + cross-domain fine-tuning"],
     "MACE":             [">=v0.3.10 (MACE-MPA-0, medium)", "MPTrj + sAlex"],
     "CHGNet":           ["v0.3.0",                         "MPTrj"],
     "M3GNet":           ["MP-2021.2.8-PES",                "MP-2021.2.8"],

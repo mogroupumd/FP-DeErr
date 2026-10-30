@@ -1,0 +1,113 @@
+{
+  "dataset": "matpes_pbe",
+  "device": "cuda",
+  "full_dataset_complete": true,
+  "structures": 434712,
+  "atoms": 3881535,
+  "finite_angle_atoms": 3664328,
+  "atoms_above_DFT_force_0_01": 3559100,
+  "undefined_angle_atoms": 217207,
+  "comparison": null,
+  "notebook": "C:\\Users\\mwang\\Documents\\Codex\\2026-10-09\\what-does-prof-mo-in-my\\FP-DeErr\\Force_error\\analysis\\force_error_analysis_matpes_pbe.ipynb",
+  "summary_cell": 15,
+  "provenance": {
+    "model": "MACE-MH-1 (omat_pbe)",
+    "dataset": {
+      "path": "C:\\Users\\mwang\\Documents\\Codex\\2026-10-09\\what-does-prof-mo-in-my\\datasets\\MatPES-PBE-2025.1.jsonl",
+      "sha256": "0d3fc076cfe9782e4fbba77f41315b24be034ee837fa8708e41dba652fa062a2",
+      "structures": 434712,
+      "source_url": "https://huggingface.co/datasets/materialyze/matpes/resolve/main/MatPES-PBE-2025.1.jsonl",
+      "version": "2025.1",
+      "anchor_force_indices": [
+        29632,
+        29634,
+        29635,
+        29639,
+        29640
+      ]
+    },
+    "weights_sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+    "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+    "device": "cuda",
+    "dtype": "float64",
+    "head": "omat_pbe",
+    "cutoff_angstrom": 6.0,
+    "dispersion_correction": false,
+    "batch_size": 16,
+    "shard_size": 128,
+    "validation_sha256": "253e01aca19a6c34d2537356a84277a02acc9e8280775c52847106aee01b18d3",
+    "force_results_sha256": "d6e8837b9a6444fbed083dfb556853a3fafa624aa4f51718214599d53e340aff",
+    "versions": {
+      "mace-torch": "0.3.16",
+      "torch": "2.7.1+cu126",
+      "e3nn": "0.4.4",
+      "numpy": "1.26.4",
+      "ase": "3.26.0",
+      "pymatgen": "2025.4.20",
+      "matscipy": "1.1.1"
+    },
+    "cpu_cuda_validation_sha256": "c4b9712ceb5ba44ac6263438af113c8b6b1dac7d5988b485aadb995aae67926f",
+    "cuda_partition_validation_sha256": "065a9193cd84376855cf603019873c6bafbaf08f8ee5aa3f7686cca221d6cccf",
+    "cuda_retry_control_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f",
+    "cuda_memory_fraction": 0.9,
+    "tf32": false
+  },
+  "model": "MACE-MH-1 (omat_pbe)",
+  "summary_metrics": {
+    "\u0394|F| MAE/RMSE (eV/\u00c5)": "0.15 / 1.10",
+    "\u0394\u03b8 MAE/RMSE (\u00b0)": "28 / 50",
+    "\u0394|F| MAE/RMSE (eV/\u00c5), |\u0394|F|| < 1 eV/\u00c5": "0.13 / 0.21",
+    "Frac. |\u0394|F|| < 0.01 eV/\u00c5 & \u0394\u03b8 < 1\u00b0/20\u00b0 (%)": "2.2 / 9.3",
+    "Frac. |\u0394|F|| < 0.01 eV/\u00c5 (%) \u2191": "13.0",
+    "Frac. |\u0394|F|| > 1 eV/\u00c5 (%) \u2193": "1.52",
+    "\u0394|F| MAE/RMSE (eV/\u00c5), on FE atoms": "0.29 / 2.07",
+    "\u0394\u03b8 MAE/RMSE (\u00b0), on FE atoms": "11 / 21"
+  },
+  "execution_history": [
+    {
+      "started_utc": "2026-10-26T04:58:43.092866+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 0,
+      "runner_sha256": "1ce60962762037f60e4a94d468c7e0360ee878bf525f56536ebc6181521cc2d4",
+      "cuda_retry_control_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f",
+      "retained_provenance_retry_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f"
+    },
+    {
+      "started_utc": "2026-10-26T23:01:35.589523+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 144768,
+      "runner_sha256": "1ce60962762037f60e4a94d468c7e0360ee878bf525f56536ebc6181521cc2d4",
+      "cuda_retry_control_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f",
+      "retained_provenance_retry_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f"
+    },
+    {
+      "started_utc": "2026-10-26T23:13:48.306482+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 144768,
+      "runner_sha256": "1ce60962762037f60e4a94d468c7e0360ee878bf525f56536ebc6181521cc2d4",
+      "cuda_retry_control_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f",
+      "retained_provenance_retry_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f"
+    },
+    {
+      "started_utc": "2026-10-27T00:13:37.475520+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 213376,
+      "runner_sha256": "1ce60962762037f60e4a94d468c7e0360ee878bf525f56536ebc6181521cc2d4",
+      "cuda_retry_control_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f",
+      "retained_provenance_retry_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f"
+    },
+    {
+      "started_utc": "2026-10-27T01:37:54.310308+00:00",
+      "workers": 1,
+      "threads_per_worker": 1,
+      "resumed_from": 352256,
+      "runner_sha256": "1ce60962762037f60e4a94d468c7e0360ee878bf525f56536ebc6181521cc2d4",
+      "cuda_retry_control_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f",
+      "retained_provenance_retry_validation_sha256": "ec78f7f8394933774ba23705b97fa41907ea03722b72427c35132fa5b7bc1b8f"
+    }
+  ]
+}

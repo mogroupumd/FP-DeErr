@@ -1,0 +1,4 @@
+,Full FP relaxation,Full FP relaxation,Full FP relaxation,Full FP relaxation,Static FP evaluations on the DFT-relaxed structures,Static FP evaluations on the DFT-relaxed structures,Static FP evaluations on the DFT-relaxed structures,Static FP evaluations on the DFT-relaxed structures
+,Average energy error (meV/atom),Ground- state agreement (%),Within-phase hull-minimum agreement (%),Hull-minimum agreement (%),Average energy error (meV/atom),Ground- state agreement (%),Within-phase hull-minimum agreement (%),Hull-minimum agreement (%)
+FP,,,,,,,,
+MACE-MH-1 (omat_pbe),87,67.1,60.3,40.9,48,75.8,75.2,50.0

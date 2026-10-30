@@ -1,0 +1,149 @@
+{
+  "pass": true,
+  "gpu_enabled": true,
+  "prepared_utc": "2026-10-27T00:09:53.219744+00:00",
+  "engine_sha256": "7145f7aa4cd182aaeed808c84469f97353e01a9e93779f399ec765623a6ac6d3",
+  "profiles": {
+    "mace_omat_0_medium": {
+      "cpu": {
+        "reference_sha256": "1b6addae634f59ec318d31214e17ecd8b8ecdab8a8c0fa9faedf8e7981e4adaa",
+        "results_sha256": "1b2e74c29d90cf4115bf9426c842a8ac230e811be199548744a94b8ced07f75f",
+        "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+        "model": "MACE-OMAT-0 Medium",
+        "weights_sha256": "d4b14be9afa294eebdbe31a0280b26a0fa29715771e978cbfd3ca24e0d90307a",
+        "versions": {
+          "mace-torch": "0.3.16",
+          "torch": "2.7.1",
+          "torchmetrics": "1.3.2",
+          "numpy": "1.26.4",
+          "e3nn": "0.4.4",
+          "ase": "3.23.0",
+          "pymatgen": "2024.10.29",
+          "matscipy": "1.1.1"
+        },
+        "protocol": "full fixed-cell relaxation from initial_structure",
+        "dtype": "float64",
+        "device": "cpu",
+        "dispersion_correction": false,
+        "threads_per_worker": 1,
+        "model_source": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_omat_0/mace-omat-0-medium.model",
+        "energy_func_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+        "optimizer": "ASE FIRE",
+        "fmax": 0.01,
+        "max_steps": 10000,
+        "fixed_cell": true
+      },
+      "cuda": {
+        "reference_sha256": "1b6addae634f59ec318d31214e17ecd8b8ecdab8a8c0fa9faedf8e7981e4adaa",
+        "results_sha256": "1b2e74c29d90cf4115bf9426c842a8ac230e811be199548744a94b8ced07f75f",
+        "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+        "model": "MACE-OMAT-0 Medium",
+        "weights_sha256": "d4b14be9afa294eebdbe31a0280b26a0fa29715771e978cbfd3ca24e0d90307a",
+        "versions": {
+          "mace-torch": "0.3.16",
+          "torch": "2.7.1+cu126",
+          "torchmetrics": "1.3.2",
+          "numpy": "1.26.4",
+          "e3nn": "0.4.4",
+          "ase": "3.23.0",
+          "pymatgen": "2024.10.29",
+          "matscipy": "1.1.1"
+        },
+        "protocol": "full fixed-cell relaxation from initial_structure",
+        "dtype": "float64",
+        "device": "cuda",
+        "dispersion_correction": false,
+        "threads_per_worker": 1,
+        "model_source": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_omat_0/mace-omat-0-medium.model",
+        "energy_func_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+        "optimizer": "ASE FIRE",
+        "fmax": 0.01,
+        "max_steps": 10000,
+        "fixed_cell": true
+      }
+    },
+    "mace_mh_1_omat_pbe": {
+      "cpu": {
+        "reference_sha256": "1b6addae634f59ec318d31214e17ecd8b8ecdab8a8c0fa9faedf8e7981e4adaa",
+        "results_sha256": "1b2e74c29d90cf4115bf9426c842a8ac230e811be199548744a94b8ced07f75f",
+        "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+        "model": "MACE-MH-1 (omat_pbe)",
+        "weights_sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+        "versions": {
+          "mace-torch": "0.3.16",
+          "torch": "2.7.1",
+          "torchmetrics": "1.3.2",
+          "numpy": "1.26.4",
+          "e3nn": "0.4.4",
+          "ase": "3.23.0",
+          "pymatgen": "2024.10.29",
+          "matscipy": "1.1.1"
+        },
+        "protocol": "full fixed-cell relaxation from initial_structure",
+        "dtype": "float64",
+        "device": "cpu",
+        "dispersion_correction": false,
+        "threads_per_worker": 1,
+        "model_source": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_mh_1/mace-mh-1.model",
+        "energy_func_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+        "optimizer": "ASE FIRE",
+        "fmax": 0.01,
+        "max_steps": 10000,
+        "fixed_cell": true
+      },
+      "cuda": {
+        "reference_sha256": "1b6addae634f59ec318d31214e17ecd8b8ecdab8a8c0fa9faedf8e7981e4adaa",
+        "results_sha256": "1b2e74c29d90cf4115bf9426c842a8ac230e811be199548744a94b8ced07f75f",
+        "repository_commit": "0d5d9a62d0ef3b7ce4da58620a7919e0e49ba815",
+        "model": "MACE-MH-1 (omat_pbe)",
+        "weights_sha256": "a522eb7f59c7879963d41586528f4980baf33e086c94aa92e3eafdeccad3be47",
+        "versions": {
+          "mace-torch": "0.3.16",
+          "torch": "2.7.1+cu126",
+          "torchmetrics": "1.3.2",
+          "numpy": "1.26.4",
+          "e3nn": "0.4.4",
+          "ase": "3.23.0",
+          "pymatgen": "2024.10.29",
+          "matscipy": "1.1.1"
+        },
+        "protocol": "full fixed-cell relaxation from initial_structure",
+        "dtype": "float64",
+        "device": "cuda",
+        "dispersion_correction": false,
+        "threads_per_worker": 1,
+        "model_source": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_mh_1/mace-mh-1.model",
+        "energy_func_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+        "optimizer": "ASE FIRE",
+        "fmax": 0.01,
+        "max_steps": 10000,
+        "fixed_cell": true
+      }
+    }
+  },
+  "calibration_speedups": {
+    "mace_omat_0_medium": 6.469144987549669,
+    "mace_mh_1_omat_pbe": 11.953704874077742
+  },
+  "cpu_workers_max": 6,
+  "minimum_available_RAM_GiB_for_more_CPU_tasks": 5,
+  "unchanged_optimizer_source_sha256": "78d930dcf0ebc548f7db2e6337d6df8b5b39155efd1c1960b7109d8ad291fde9",
+  "source_files_sha256": {
+    "round2_relax_engine.py": "7145f7aa4cd182aaeed808c84469f97353e01a9e93779f399ec765623a6ac6d3",
+    "round2_joint_relaxation.py": "a891ee70497f055f83455d8cff9733d26e1ac517e5b84beabdb73367dd2660cc",
+    "round2_relax_gpu_worker.py": "c933c976296683822a2950362729298122ee130159eea419127b45614bfde898",
+    "round2_relax_analysis.py": "c7e63b9b3d60df945e1a222a1ce51282a7fca3c1975bfdd8b12c722619e80305",
+    "calibrate_round2_relaxation.py": "5434ee59bf779911127af54093f958b33bbc76337b92a9e70364d7f2c3354a9c",
+    "cuda_saved_tensor_offload.py": "9bae8663812e39842ae91179324a965b8a639b8d129913626795571df46a9453",
+    "relaxation_runner.py": "a9b4acd7b1ff81fa9f85c82d0ed734ebe357078e5686b05590944abdd9442134"
+  },
+  "calibration_files_sha256": {
+    "cpu": "7c997b48e5417cad602379153a0e902cc7de698a3fc8658eee4c1f594f08669d",
+    "cuda": "e79bb18d53326cf032923c8ef241512e519c9b7c957529ff3041f450e1126eab"
+  },
+  "ownership_test": {
+    "jobs": 80,
+    "duplicates": 0,
+    "omitted": 0
+  }
+}

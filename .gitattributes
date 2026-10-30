@@ -1,0 +1,8 @@
+docs/force-error.html -text
+docs/phase-stability-ordering.html -text
+docs/data/ion_migration_neb_leaderboard_summary.json -text
+Ion_migration_NEB/data/ion_migration_neb_leaderboard_summary.json -text
+docs/ion-migration-neb.html -text
+Ion_migration_NEB/scripts/export_neb_leaderboard.py -text
+.gitattributes -text
+contributions/mace-models/** -text whitespace=cr-at-eol
