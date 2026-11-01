@@ -79,7 +79,7 @@ FP_ORDER = [
     "M3GNET_matpes_PBE", "TensorNET_matpes_PBE", "MACE_matpes_pbe",
     "Orb_v3_conservative_inf_omat", "SevenNet_mf_ompa", "MatterSim_v1_5M",
     "Nequix_oam_1", "GPTFF_v2", "NEP89", "DPA4_Plus_OMat24",
-    "GRACE_3L_OMAT_large_ft_AM",
+    "GRACE_3L_OMAT_large_ft_AM", "MACE_OMAT_0_medium",
 ]
 # GPTFF_v2 ran under ASE 3.28.0 while every other second-wave FP ran 3.29.0
 # (all fifteen otherwise share matcalc 0.4.3, neb_method "aseneb" and the same
@@ -91,6 +91,9 @@ FP_ORDER = [
 # wave, and its full/static ratio (1.07) sits inside the 0.88-1.29 band spanned
 # by all fifteen. The anomaly is in the potential energy surface, not the ASE
 # version. See NEB_matcalc_ase_provenance.md.
+# MACE_OMAT_0_medium (added after the manuscript) ran in the MACE-MatPES
+# environment: ASE 3.24.0, matcalc 0.4.0, the same neb_method "aseneb" and
+# BFGS-through-MatCalc optimizer.
 FP_DISPLAY_NAMES = {
     "MACE-MP0_medium":      "MACE",
     "CHGNET":               "CHGNet",
@@ -107,6 +110,7 @@ FP_DISPLAY_NAMES = {
     "NEP89":                        "NEP89",
     "DPA4_Plus_OMat24":             "DPA4",
     "GRACE_3L_OMAT_large_ft_AM":    "GRACE",
+    "MACE_OMAT_0_medium":           "MACE-OMAT",
 }
 OUTLIER_THRESHOLD = 1.0
 ROUND_DECIMALS = 4

@@ -189,6 +189,7 @@ not silently replaced.
 | M3GNet-MatPES | v2025.1 | 664.2K | MatPES-PBE | ~435K | [MatGL](https://matgl.ai/) &middot; [MatPES](https://matpes.ai/) |
 | TensorNet-MatPES | v2025.1 | 837.9K | MatPES-PBE | ~435K | [MatGL](https://matgl.ai/) &middot; [MatPES](https://matpes.ai/) |
 | MACE-MatPES | &gt;=v0.3.10 | 9.06M | Fine-tuned on MatPES-PBE* | ~435K | [MACE](https://github.com/acesuit/mace) |
+| MACE-OMAT | &gt;=v0.3.10 (MACE-OMAT-0, medium) | 9.06M | OMat24, DFT (PBE+U)&para;&para; | not reported for this checkpoint | [MACE foundation models](https://mace-docs.readthedocs.io/en/latest/guide/foundation_models.html) |
 | M3GNet-MatPES-r2SCAN | v2025.1 | 664.2K | MatPES-r2SCAN | ~388K | [MatGL](https://matgl.ai/) &middot; [MatPES](https://matpes.ai/) |
 | TensorNet-MatPES-r2SCAN | v2025.1 | 837.9K | MatPES-r2SCAN | ~388K | [MatGL](https://matgl.ai/) &middot; [MatPES](https://matpes.ai/) |
 | MACE-MatPES-r2SCAN | &gt;=v0.3.10 | 9.06M | Fine-tuned on MatPES-r2SCAN* | ~388K | [MACE](https://github.com/acesuit/mace) |
@@ -261,6 +262,8 @@ databases, including MatPES, MatPES-r2SCAN, OMat24, MPTrj and Alexandria, were r
 reports 105k parameters and does not report the size of the distillation set; FP-DeErr counts
 103,401 parameters in the loaded checkpoint.
 
+&para;&para; MACE-OMAT is the `mace-omat-0-medium` checkpoint (MACE-OMAT-0). The MACE foundation-model documentation lists it as trained on OMat24 at the DFT (PBE+U) level with VASP 54 pseudopotentials, released under the Academic Software License (ASL). It is the base model that the MACE-MatPES checkpoints were fine-tuned from (\*). FP-DeErr counts 9,063,204 parameters in the loaded checkpoint, the same as MACE-MPA-0 and MACE-MatPES. It was added to the leaderboards after the manuscript and is not part of the manuscript roster.
+
 &#8627; Rows marked with an arrow are additional checkpoints of the FP family directly above, at
 a different model size. They are evaluated for Force Prediction (MatPES-PBE and OMat24
 rattled-1000) only and appear on the Force Prediction leaderboard next to the family's main
@@ -269,8 +272,8 @@ other sizes are counted from the loaded checkpoints.
 
 The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4
 and GRACE to the seven originally reported. This website evaluates further FPs beyond that
-manuscript roster: the Ion Migration (NEB) leaderboard currently lists 15 FPs and the Phase
-Stability and Ordering leaderboard 17. The r2SCAN-trained entries are a separate set,
+manuscript roster: the Ion Migration (NEB) leaderboard currently lists 16 FPs and the Phase
+Stability and Ordering leaderboard 18. The r2SCAN-trained entries are a separate set,
 evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from
 the loaded checkpoints.
 
@@ -290,6 +293,7 @@ other data (`pretraining`).
 | M3GNet-MatPES | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) |
 | TensorNet-MatPES | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) |
 | MACE-MatPES | &#10003; (training) | &#10003; (pretraining)* | &#10003; (OOD) | &#10003; (OOD) |
+| MACE-OMAT | &#10003; (OOD) | &#10003; (training)&para;&para; | &#10003; (OOD) | &#10003; (OOD) |
 | Orb | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
 | SevenNet | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
 | &#8627; SevenNet-0 | &#10003; (OOD) | &#10003; (OOD) | not evaluated | not evaluated |
@@ -310,6 +314,8 @@ other data (`pretraining`).
 | eSEN | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | not evaluated |
 
 \* Pre-trained on MACE-OMAT-0, fine-tuned on MatPES-PBE.
+
+&para;&para; MACE-OMAT-0 is trained on OMat24, so OMat24 rattled-1000 is inside its training data.
 
 The last two columns reflect what is currently published on the component leaderboards,
 which now extends beyond the roster evaluated in the manuscript. eqV2 and eSEN are evaluated

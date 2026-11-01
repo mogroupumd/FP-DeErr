@@ -505,7 +505,7 @@
   <p style="margin-top:1rem;font-size:0.85rem;color:var(--muted);">
     Endpoint structures were relaxed with a convergence threshold of 0.002 eV/&Aring; and fixed cell
     shape/volume; the full FP-NEB workflow uses a convergence threshold of 0.05 eV/&Aring; and a
-    maximum of 1000 NEB steps. Model versions and official sources for the 15 FPs evaluated here
+    maximum of 1000 NEB steps. Model versions and official sources for the 16 FPs evaluated here
     are documented once on the <a href="index.html#models" style="color:var(--accent);">FP-DeErr home page</a>.
     See the <a href="https://github.com/mogroupumd/FP-DeErr/tree/main/Ion_migration_NEB" style="color:var(--accent);">Ion_migration_NEB README</a>
     for the full standardized-file schema.
@@ -774,7 +774,7 @@ jupyter lab analysis/neb_analysis.ipynb</code></pre>
   // ones already published on the Force Prediction leaderboard for the same FPs.
   // Number of FP records both leaderboard tables expect to find in the summary
   // JSON. Bump this in one place when a wave of potentials is added.
-  const EXPECTED_FP_COUNT = 15;
+  const EXPECTED_FP_COUNT = 16;
 
   const FP_PROVENANCE = {
     "MACE":             [">=v0.3.10 (MACE-MPA-0, medium)", "MPTrj + sAlex"],
@@ -792,6 +792,7 @@ jupyter lab analysis/neb_analysis.ipynb</code></pre>
     "NEP89":            ["nep89_20250409",                   "mixed QM levels"],
     "DPA4":             ["DPA4-Plus-OMat24-v20260805",       "OMat24"],
     "GRACE":            ["GRACE-3L-OMAT-large-ft-AM",        "OMat24 \u2192 sAlex + MPTrj"],
+    "MACE-OMAT":        [">=v0.3.10 (MACE-OMAT-0, medium)",  "OMat24"],
   };
   function appendProvenanceCell(tr, displayName) {
     const meta = FP_PROVENANCE[displayName];

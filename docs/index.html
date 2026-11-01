@@ -439,6 +439,14 @@
         <td><a href="https://github.com/acesuit/mace" style="color:var(--accent);">MACE (GitHub)</a></td>
       </tr>
       <tr>
+        <td>MACE-OMAT</td>
+        <td>&gt;=v0.3.10 (MACE-OMAT-0, medium)</td>
+        <td>9.06M</td>
+        <td>OMat24, DFT (PBE+U)&para;&para;</td>
+        <td>not reported for this checkpoint</td>
+        <td><a href="https://mace-docs.readthedocs.io/en/latest/guide/foundation_models.html" style="color:var(--accent);">MACE foundation models</a></td>
+      </tr>
+      <tr>
         <td>M3GNet-MatPES-r2SCAN</td>
         <td>v2025.1</td>
         <td>664.2K</td>
@@ -618,8 +626,9 @@
   <p class="note">&Dagger;&Dagger; FP-DeErr counts 42.1M parameters (42,112,223) for the GRACE potential used in inference. The released SavedModel additionally contains a 23.4M-parameter GMM uncertainty head that is disabled in FP-DeErr runs and is therefore not included in the reported model size. The GRACE documentation does not publish a parameter count; 42.1M was measured from the released model by FP-DeErr.</p>
   <p class="note"># The immediate model sources describe these labels as DFT and DFT+U total-energy labels. OMat24 itself uses PBE/PBE+U reference calculations; see the <a href="https://arxiv.org/abs/2410.12771" style="color:var(--accent);">OMat24 dataset reference</a>.</p>
   <p class="note">&sect;&sect; SevenNet-Nano is distilled from 7net-Omni: structures from 7net-Omni&rsquo;s training databases, including MatPES, MatPES-r2SCAN, OMat24, MPTrj and Alexandria, were relabelled with 7net-Omni&rsquo;s <code>mpa</code> (PBE) task (<a href="https://arxiv.org/abs/2604.10887" style="color:var(--accent);">arXiv:2604.10887</a>). The paper reports 105k parameters and does not report the size of the distillation set; FP-DeErr counts 103,401 parameters in the loaded checkpoint.</p>
+  <p class="note">&para;&para; MACE-OMAT is the <code>mace-omat-0-medium</code> checkpoint (MACE-OMAT-0). The <a href="https://mace-docs.readthedocs.io/en/latest/guide/foundation_models.html" style="color:var(--accent);">MACE foundation-model documentation</a> lists it as trained on OMat24 at the DFT (PBE+U) level with VASP 54 pseudopotentials, released under the Academic Software License (ASL). It is the base model that the MACE-MatPES checkpoints were fine-tuned from (*). FP-DeErr counts 9,063,204 parameters in the loaded checkpoint, the same as MACE-MPA-0 and MACE-MatPES. It was added to the leaderboards after the manuscript and is not part of the manuscript roster.</p>
   <p class="note">&#8627; Indented rows are additional checkpoints of the FP family directly above, at a different model size. They are evaluated for Force Prediction (MatPES-PBE and OMat24 rattled-1000) only and appear on the Force Prediction leaderboard next to the family&rsquo;s main checkpoint. The DPA4 sizes are the parameter counts published on the DPA4-OMat24 model card; the other sizes are counted from the loaded checkpoints.</p>
-  <p class="note">The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4 and GRACE to the seven originally reported. This website evaluates further FPs beyond that manuscript roster: the Ion Migration (NEB) leaderboard currently lists 15 FPs and the Phase Stability and Ordering leaderboard 17. The r2SCAN-trained entries are a separate set, evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from the loaded checkpoints.</p>
+  <p class="note">The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4 and GRACE to the seven originally reported. This website evaluates further FPs beyond that manuscript roster: the Ion Migration (NEB) leaderboard currently lists 16 FPs and the Phase Stability and Ordering leaderboard 18. The r2SCAN-trained entries are a separate set, evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from the loaded checkpoints.</p>
   <p class="note">This is the current set of FPs evaluated. As additional FPs are tested, they will be added to this table; existing benchmark results remain tied to their original model versions and are not silently replaced.</p>
 </section>
 
@@ -636,6 +645,7 @@
       <tr><td>M3GNet-MatPES</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
       <tr><td>TensorNet-MatPES</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
       <tr><td>MACE-MatPES</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (pretraining)*</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
+      <tr><td>MACE-OMAT</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (training)&para;&para;</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
       <tr><td>Orb</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
       <tr><td>SevenNet</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
       <tr><td style="padding-left:1.4em;">&#8627; SevenNet-0</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td><td>not evaluated</td><td>not evaluated</td></tr>
@@ -657,6 +667,7 @@
     </table>
   </div>
   <p class="note">* Pre-trained on MACE-OMAT-0, fine-tuned on MatPES-PBE.</p>
+  <p class="note">&para;&para; MACE-OMAT-0 is trained on OMat24, so OMat24 rattled-1000 is inside its training data.</p>
   <p class="note">&#8627; Indented rows are additional, differently sized checkpoints of the family above, evaluated for Force Prediction only.</p>
   <p class="note">The three r2SCAN-trained FPs (M3GNet-MatPES-r2SCAN, TensorNet-MatPES-r2SCAN, MACE-MatPES-r2SCAN) are evaluated on the MatPES-r2SCAN dataset (training), in addition to the models listed above.</p>
   <p class="note"><strong style="color:var(--heading);">The last two columns reflect what is currently published on the component leaderboards</strong>, which now extends beyond the roster evaluated in the manuscript. eqV2 and eSEN are evaluated for <a href="phase-stability-ordering.html" style="color:var(--accent);">Phase Stability &amp; Ordering</a>; their <a href="ion-migration-neb.html" style="color:var(--accent);">Ion Migration (NEB)</a> runs are still in progress.</p>
