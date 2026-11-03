@@ -287,7 +287,7 @@ other sizes are counted from the loaded checkpoints.
 
 The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4
 and GRACE to the seven originally reported. This website evaluates further FPs beyond that
-manuscript roster: the Ion Migration (NEB) leaderboard currently lists 23 FPs and the Phase
+manuscript roster: the Ion Migration (NEB) leaderboard currently lists 25 FPs and the Phase
 Stability and Ordering leaderboard 25. The r2SCAN-trained entries are a separate set,
 evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from
 the loaded checkpoints.
@@ -325,8 +325,8 @@ other data (`pretraining`).
 | &#8627; GRACE-1L | &#10003; (OOD) | &#10003; (pretraining) | not evaluated | not evaluated |
 | &#8627; GRACE-2L | &#10003; (OOD) | &#10003; (pretraining) | not evaluated | not evaluated |
 | &#8627; GRACE-2L-large | &#10003; (OOD) | &#10003; (pretraining) | not evaluated | not evaluated |
-| eqV2 | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | not evaluated |
-| eSEN | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | not evaluated |
+| eqV2 | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD)&para;&para;&para; |
+| eSEN | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD) |
 | NequIP-OAM-S | &#10003; (OOD) | &#10003; (pretraining)&#8214;&#8214; | &#10003; (OOD) | &#10003; (OOD) |
 | NequIP-OAM-M | &#10003; (OOD) | &#10003; (pretraining)&#8214;&#8214; | &#10003; (OOD) | &#10003; (OOD) |
 | NequIP-OAM-L | &#10003; (OOD) | &#10003; (pretraining)&#8214;&#8214; | &#10003; (OOD) | &#10003; (OOD) |
@@ -341,11 +341,13 @@ other data (`pretraining`).
 
 &#8214;&#8214; NequIP-OAM-S, -M and -L use OMat24 for pretraining only and are then fine-tuned on sAlex + MPTrj.
 
+&para;&para;&para; eqV2 predicts forces from a separate output head rather than as the energy gradient; its Ion Migration (NEB) entry carries a note on how this affects the full FP-NEB.
+
 &sect;&sect;&sect; MACE-MH-1's `omat_pbe` head is trained on an OMat24 replay set, so OMat24 rattled-1000 is inside its training data. MatPES-PBE is not, although its shared backbone was also fine-tuned on MatPES-r2SCAN structures through a separate head.
 
 The last two columns reflect what is currently published on the component leaderboards,
 which now extends beyond the roster evaluated in the manuscript. eqV2 and eSEN are evaluated
-for phase stability / ordering; their ion-migration NEB runs are still in progress.
+for phase stability / ordering and ion-migration NEB.
 
 The three r2SCAN-trained FPs are evaluated on MatPES-r2SCAN (training), in addition to the
 models above.

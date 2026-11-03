@@ -46,6 +46,8 @@
     "NEP89",
     "DPA4_Plus_OMat24",
     "GRACE_3L_OMAT_large_ft_AM",
+    "eqV2_31M_OMat_MP_sAlex",
+    "eSEN_30M_OAM",
     "MACE_OMAT_0_medium",
     "NequIP_OAM_S",
     "NequIP_OAM_M",
@@ -387,6 +389,50 @@
       "endpoint_rmsd_lt_0_20_pct": 96.3576
     },
     {
+      "fp_key": "eqV2_31M_OMat_MP_sAlex",
+      "display_name": "eqV2",
+      "n_nonconverged": 5,
+      "n_total": 154,
+      "barrier_mae_full_eV": 0.2046,
+      "barrier_rmse_full_eV": 0.3683,
+      "barrier_mae_static_eV": 0.1185,
+      "barrier_rmse_static_eV": 0.2008,
+      "endpoint_energy_diff_mae_eV": 0.0979,
+      "endpoint_energy_diff_rmse_eV": 0.2347,
+      "endpoint_ranking_agreement_pct": 61.0738,
+      "energy_profile_shape_agreement_pct": 55.0336,
+      "endpoint_rmsd_n_converged_paths": 149,
+      "endpoint_rmsd_n_endpoint_attempts": 298,
+      "endpoint_rmsd_map_success_pct": 99.3289,
+      "endpoint_rmsd_mean_angstrom": 0.0591,
+      "endpoint_rmsd_max_angstrom": 0.7215,
+      "endpoint_rmsd_lt_0_05_pct": 70.6081,
+      "endpoint_rmsd_lt_0_10_pct": 84.7973,
+      "endpoint_rmsd_lt_0_20_pct": 94.2568
+    },
+    {
+      "fp_key": "eSEN_30M_OAM",
+      "display_name": "eSEN",
+      "n_nonconverged": 3,
+      "n_total": 154,
+      "barrier_mae_full_eV": 0.0467,
+      "barrier_rmse_full_eV": 0.0931,
+      "barrier_mae_static_eV": 0.0436,
+      "barrier_rmse_static_eV": 0.098,
+      "endpoint_energy_diff_mae_eV": 0.0208,
+      "endpoint_energy_diff_rmse_eV": 0.0537,
+      "endpoint_ranking_agreement_pct": 90.7285,
+      "energy_profile_shape_agreement_pct": 95.3642,
+      "endpoint_rmsd_n_converged_paths": 151,
+      "endpoint_rmsd_n_endpoint_attempts": 302,
+      "endpoint_rmsd_map_success_pct": 100.0,
+      "endpoint_rmsd_mean_angstrom": 0.0409,
+      "endpoint_rmsd_max_angstrom": 0.6028,
+      "endpoint_rmsd_lt_0_05_pct": 82.4503,
+      "endpoint_rmsd_lt_0_10_pct": 89.7351,
+      "endpoint_rmsd_lt_0_20_pct": 96.6887
+    },
+    {
       "fp_key": "MACE_OMAT_0_medium",
       "display_name": "MACE-OMAT",
       "n_nonconverged": 2,
@@ -565,8 +611,8 @@
   ],
   "generation_metadata": {
     "generated_by": "Ion_migration_NEB/scripts/export_neb_leaderboard.py, from neb_analysis.py's build_neb_analysis_results/compute_key_neb_metrics_summary (same functions and rounding order as the analysis notebook)",
-    "merged_by": "five export_neb_leaderboard.py runs over five results files, combined without recomputation: the per-FP records are byte-identical to what each run wrote. All runs used the same reference file and produced identical global blocks; that equality is asserted before merging.",
-    "generation_timestamp_utc": "2026-11-03T01:48:54.350234+00:00",
+    "merged_by": "six export_neb_leaderboard.py runs over six results files, combined without recomputation: the per-FP records are byte-identical to what each run wrote. All runs used the same reference file and produced identical global blocks; that equality is asserted before merging.",
+    "generation_timestamp_utc": "2026-11-03T02:19:53.836070+00:00",
     "source_reference_file": "ion_migration_neb_reference.json.gz",
     "source_reference_sha256": "e211dc4a88fe5739218d6b1e47404624225c5a0d787f4dcce3ef61a5574087c4",
     "sources": [
@@ -621,6 +667,14 @@
           "NequIP_OAM_M",
           "PET_OMat_XS_v1_0_0",
           "PET_OMat_S_v1_0_0"
+        ]
+      },
+      {
+        "source_results_file": "ion_migration_neb_fp_results_eqv2_esen.json.gz",
+        "source_results_sha256": "9e441b3bbc9933a3f3fae8f4a659f270a928b0cf7fa1d0b685981e4f5b3d9299",
+        "fp_keys": [
+          "eqV2_31M_OMat_MP_sAlex",
+          "eSEN_30M_OAM"
         ]
       }
     ]

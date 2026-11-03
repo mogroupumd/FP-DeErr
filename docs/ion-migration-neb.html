@@ -422,6 +422,7 @@
     <th class="ver-col">Version (training)</th></tr></thead><tbody>
     </tbody></table>
     </div>
+    <p class="lb-note" style="font-size:0.8rem;color:var(--muted);margin-top:0.6rem;">&dagger; eqV2 (<code>eqV2_31M_omat_mp_salex</code>) predicts forces from a separate output head rather than as the gradient of its energy, so the forces that drive its full FP-NEB are not consistent with the energies from which the barrier is read. Its barrier MAE is 0.119 eV when it is evaluated statically on the DFT NEB images and 0.205 eV after its own full FP-NEB, a ratio of 1.73; for every other FP on this board the ratio is between 0.77 and 1.29. Its full FP-NEB values therefore reflect this force&ndash;energy inconsistency as well as its potential-energy surface. eqV2 and eSEN were added after the manuscript and are not part of the manuscript roster.</p>
   </div>
 
   <div id="tab-rmsd" class="tab-panel">
@@ -505,7 +506,7 @@
   <p style="margin-top:1rem;font-size:0.85rem;color:var(--muted);">
     Endpoint structures were relaxed with a convergence threshold of 0.002 eV/&Aring; and fixed cell
     shape/volume; the full FP-NEB workflow uses a convergence threshold of 0.05 eV/&Aring; and a
-    maximum of 1000 NEB steps. Model versions and official sources for the 23 FPs evaluated here
+    maximum of 1000 NEB steps. Model versions and official sources for the 25 FPs evaluated here
     are documented once on the <a href="index.html#models" style="color:var(--accent);">FP-DeErr home page</a>.
     See the <a href="https://github.com/mogroupumd/FP-DeErr/tree/main/Ion_migration_NEB" style="color:var(--accent);">Ion_migration_NEB README</a>
     for the full standardized-file schema.
@@ -774,7 +775,7 @@ jupyter lab analysis/neb_analysis.ipynb</code></pre>
   // ones already published on the Force Prediction leaderboard for the same FPs.
   // Number of FP records both leaderboard tables expect to find in the summary
   // JSON. Bump this in one place when a wave of potentials is added.
-  const EXPECTED_FP_COUNT = 23;
+  const EXPECTED_FP_COUNT = 25;
 
   const FP_PROVENANCE = {
     "MACE":             [">=v0.3.10 (MACE-MPA-0, medium)", "MPTrj + sAlex"],
@@ -792,6 +793,8 @@ jupyter lab analysis/neb_analysis.ipynb</code></pre>
     "NEP89":            ["nep89_20250409",                   "mixed QM levels"],
     "DPA4":             ["DPA4-Plus-OMat24-v20260805",       "OMat24"],
     "GRACE":            ["GRACE-3L-OMAT-large-ft-AM",        "OMat24 \u2192 sAlex + MPTrj"],
+    "eqV2":             ["eqV2_31M_omat_mp_salex.pt \u2020",  "OMat24 \u2192 MPTrj + sAlex"],
+    "eSEN":             ["esen_30m_oam.pt",                  "OMat24 \u2192 MPTrj + sAlex"],
     "MACE-OMAT":        [">=v0.3.10 (MACE-OMAT-0, medium)",  "OMat24"],
     "NequIP-OAM-S":     ["NequIP-OAM-S 0.1",                 "OMat24 \u2192 sAlex + MPTrj"],
     "NequIP-OAM-M":     ["NequIP-OAM-M 0.1",                 "OMat24 \u2192 sAlex + MPTrj"],
