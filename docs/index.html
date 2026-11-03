@@ -614,6 +614,62 @@
         <td>not reported for this checkpoint</td>
         <td><a href="https://huggingface.co/facebook/OMAT24" style="color:var(--accent);">Meta OMat24 models</a></td>
       </tr>
+      <tr>
+        <td>NequIP-OAM-S</td>
+        <td>NequIP-OAM-S-0.1</td>
+        <td>616.4K</td>
+        <td>OMat24 pretraining &rarr; sAlex + MPTrj fine-tuning&#8214;&#8214;</td>
+        <td>~113M frames (~101M + ~10.5M + ~1.5M)</td>
+        <td><a href="https://zenodo.org/records/18775904" style="color:var(--accent);">NequIP foundation potentials (Zenodo)</a></td>
+      </tr>
+      <tr>
+        <td>NequIP-OAM-M</td>
+        <td>NequIP-OAM-M-0.1</td>
+        <td>3.19M</td>
+        <td>OMat24 pretraining &rarr; sAlex + MPTrj fine-tuning&#8214;&#8214;</td>
+        <td>~113M frames (~101M + ~10.5M + ~1.5M)</td>
+        <td><a href="https://zenodo.org/records/18775904" style="color:var(--accent);">NequIP foundation potentials (Zenodo)</a></td>
+      </tr>
+      <tr>
+        <td>NequIP-OAM-L</td>
+        <td>NequIP-OAM-L-0.1</td>
+        <td>9.61M</td>
+        <td>OMat24 pretraining &rarr; sAlex + MPTrj fine-tuning&#8214;&#8214;</td>
+        <td>~113M frames (~101M + ~10.5M + ~1.5M)</td>
+        <td><a href="https://zenodo.org/records/18775904" style="color:var(--accent);">NequIP foundation potentials (Zenodo)</a></td>
+      </tr>
+      <tr>
+        <td>PET-OMat-XS</td>
+        <td>pet-omat-xs-v1.0.0</td>
+        <td>4.49M</td>
+        <td>OMat24, PBE&dagger;&dagger;&dagger;</td>
+        <td>not reported for this checkpoint</td>
+        <td><a href="https://lab-cosmo.github.io/upet/latest/models.html" style="color:var(--accent);">UPET models</a></td>
+      </tr>
+      <tr>
+        <td>PET-OMat-S</td>
+        <td>pet-omat-s-v1.0.0</td>
+        <td>25.9M</td>
+        <td>OMat24, PBE&dagger;&dagger;&dagger;</td>
+        <td>not reported for this checkpoint</td>
+        <td><a href="https://lab-cosmo.github.io/upet/latest/models.html" style="color:var(--accent);">UPET models</a></td>
+      </tr>
+      <tr>
+        <td>DPA-4.1C-Air</td>
+        <td>DPA-4.1C-Air-OAM</td>
+        <td>433.7K</td>
+        <td>MPTrj + OMat24 + sAlex&Dagger;&Dagger;&Dagger;</td>
+        <td>not reported for this checkpoint</td>
+        <td><a href="https://doi.org/10.6084/m9.figshare.34755132" style="color:var(--accent);">DPA-4.1C-Air-OAM (figshare)</a></td>
+      </tr>
+      <tr>
+        <td>MACE-MH-1</td>
+        <td>mace-mh-1 (head <code>omat_pbe</code>)</td>
+        <td>6.44M</td>
+        <td>OMat24 pretraining &rarr; multi-head fine-tuning; <code>omat_pbe</code> head on an OMat24 replay set, PBE/PBE+U&sect;&sect;&sect;</td>
+        <td>100M (pretraining) + fine-tuning sets&sect;&sect;&sect;</td>
+        <td><a href="https://huggingface.co/mace-foundations/mace-mh-1" style="color:var(--accent);">MACE-MH-1 model card</a></td>
+      </tr>
     </table>
   </div>
   <p class="note">* Pre-trained on MACE-OMAT-0, then fine-tuned on the matched MatPES functional.</p>
@@ -627,8 +683,12 @@
   <p class="note"># The immediate model sources describe these labels as DFT and DFT+U total-energy labels. OMat24 itself uses PBE/PBE+U reference calculations; see the <a href="https://arxiv.org/abs/2410.12771" style="color:var(--accent);">OMat24 dataset reference</a>.</p>
   <p class="note">&sect;&sect; SevenNet-Nano is distilled from 7net-Omni: structures from 7net-Omni&rsquo;s training databases, including MatPES, MatPES-r2SCAN, OMat24, MPTrj and Alexandria, were relabelled with 7net-Omni&rsquo;s <code>mpa</code> (PBE) task (<a href="https://arxiv.org/abs/2604.10887" style="color:var(--accent);">arXiv:2604.10887</a>). The paper reports 105k parameters and does not report the size of the distillation set; FP-DeErr counts 103,401 parameters in the loaded checkpoint.</p>
   <p class="note">&para;&para; MACE-OMAT is the <code>mace-omat-0-medium</code> checkpoint (MACE-OMAT-0). The <a href="https://mace-docs.readthedocs.io/en/latest/guide/foundation_models.html" style="color:var(--accent);">MACE foundation-model documentation</a> lists it as trained on OMat24 at the DFT (PBE+U) level with VASP 54 pseudopotentials, released under the Academic Software License (ASL). It is the base model that the MACE-MatPES checkpoints were fine-tuned from (*). FP-DeErr counts 9,063,204 parameters in the loaded checkpoint, the same as MACE-MPA-0 and MACE-MatPES. It was added to the leaderboards after the manuscript and is not part of the manuscript roster.</p>
+  <p class="note">&#8214;&#8214; NequIP-OAM-S, -M and -L are the version 0.1 checkpoints of the <a href="https://zenodo.org/records/18775904" style="color:var(--accent);">NequIP OAM release</a>. The release states that they are pre-trained on OMat24 (~101M frames) and fine-tuned on sAlex (~10.5M frames) and MPTrj (~1.5M frames); it does not state the DFT level of the labels. The model pages list 0.6M, 3.2M and 9.6M parameters; FP-DeErr counts 616,360, 3,189,672 and 9,605,688 in the loaded checkpoints. The weights are released under CC-BY-4.0. They were added to the leaderboards after the manuscript and are not part of the manuscript roster.</p>
+  <p class="note">&dagger;&dagger;&dagger; PET-OMat-XS and PET-OMat-S are the v1.0.0 checkpoints of the PET-OMat family. The <a href="https://lab-cosmo.github.io/upet/latest/models.html" style="color:var(--accent);">UPET documentation</a> lists PET-OMat as trained on OMat24 at the PBE level, and the UPET paper (<a href="https://arxiv.org/abs/2601.16195" style="color:var(--accent);">arXiv:2601.16195</a>) reports 4.5M and 25.9M parameters; FP-DeErr counts 4,487,962 and 25,924,122. Neither source reports the number of training structures for these checkpoints. The UPET repository is released under the BSD-3-Clause license. They were added to the leaderboards after the manuscript and are not part of the manuscript roster.</p>
+  <p class="note">&Dagger;&Dagger;&Dagger; DPA-4.1C-Air is the <code>DPA-4.1C-Air-OAM</code> checkpoint (<a href="https://doi.org/10.6084/m9.figshare.34755132" style="color:var(--accent);">figshare</a>). Its <a href="https://github.com/janosh/matbench-discovery/blob/main/models/deepmd/dpa-4.1c-air-oam.yml" style="color:var(--accent);">Matbench Discovery model card</a> describes it as trained on MPtrj, OMat24 and sAlex, with pre-training and fine-tuning, and lists 433,673 parameters, which matches the FP-DeErr count. It does not state which dataset was used in which stage, or the training-set size. The checkpoint is released under CC BY 4.0. It was added to the leaderboards after the manuscript and is not part of the manuscript roster.</p>
+  <p class="note">&sect;&sect;&sect; MACE-MH-1 is a multi-head MACE model; FP-DeErr uses its default <code>omat_pbe</code> head (PBE/PBE+U). The <a href="https://huggingface.co/mace-foundations/mace-mh-1" style="color:var(--accent);">model card</a> describes pre-training on OMat24 (100M structures) followed by multi-head fine-tuning on a 10M OMat24 replay set (the <code>omat_pbe</code> head), MPTrj, SPICE-1, OC20, OMol (1%), RGD1 and MatPES-r2SCAN, each on its own head; the accompanying paper (<a href="https://arxiv.org/abs/2510.25380" style="color:var(--accent);">arXiv:2510.25380</a>) states that all weights, including the shared backbone, are fine-tuned. MatPES-PBE is not in its training data. The model card does not report a parameter count; FP-DeErr counts 6,439,878. It is released under the Academic Software License (ASL). It was added to the leaderboards after the manuscript and is not part of the manuscript roster.</p>
   <p class="note">&#8627; Indented rows are additional checkpoints of the FP family directly above, at a different model size. They are evaluated for Force Prediction (MatPES-PBE and OMat24 rattled-1000) only and appear on the Force Prediction leaderboard next to the family&rsquo;s main checkpoint. The DPA4 sizes are the parameter counts published on the DPA4-OMat24 model card; the other sizes are counted from the loaded checkpoints.</p>
-  <p class="note">The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4 and GRACE to the seven originally reported. This website evaluates further FPs beyond that manuscript roster: the Ion Migration (NEB) leaderboard currently lists 16 FPs and the Phase Stability and Ordering leaderboard 18. The r2SCAN-trained entries are a separate set, evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from the loaded checkpoints.</p>
+  <p class="note">The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4 and GRACE to the seven originally reported. This website evaluates further FPs beyond that manuscript roster: the Ion Migration (NEB) leaderboard currently lists 23 FPs and the Phase Stability and Ordering leaderboard 25. The r2SCAN-trained entries are a separate set, evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from the loaded checkpoints.</p>
   <p class="note">This is the current set of FPs evaluated. As additional FPs are tested, they will be added to this table; existing benchmark results remain tied to their original model versions and are not silently replaced.</p>
 </section>
 
@@ -664,10 +724,19 @@
       <tr><td style="padding-left:1.4em;">&#8627; GRACE-2L-large</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (pretraining)</td><td>not evaluated</td><td>not evaluated</td></tr>
       <tr><td>eqV2</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (pretraining)</td><td class="yes">&#10003; (OOD)</td><td>not evaluated</td></tr>
       <tr><td>eSEN</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (pretraining)</td><td class="yes">&#10003; (OOD)</td><td>not evaluated</td></tr>
+      <tr><td>NequIP-OAM-S</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (pretraining)&#8214;&#8214;</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
+      <tr><td>NequIP-OAM-M</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (pretraining)&#8214;&#8214;</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
+      <tr><td>NequIP-OAM-L</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (pretraining)&#8214;&#8214;</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
+      <tr><td>PET-OMat-XS</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
+      <tr><td>PET-OMat-S</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
+      <tr><td>DPA-4.1C-Air</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (training)</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
+      <tr><td>MACE-MH-1</td><td class="yes">&#10003; (OOD)&sect;&sect;&sect;</td><td class="yes">&#10003; (training)&sect;&sect;&sect;</td><td class="yes">&#10003; (OOD)</td><td class="yes">&#10003; (OOD)</td></tr>
     </table>
   </div>
   <p class="note">* Pre-trained on MACE-OMAT-0, fine-tuned on MatPES-PBE.</p>
   <p class="note">&para;&para; MACE-OMAT-0 is trained on OMat24, so OMat24 rattled-1000 is inside its training data.</p>
+  <p class="note">&#8214;&#8214; NequIP-OAM-S, -M and -L use OMat24 for pretraining only and are then fine-tuned on sAlex + MPTrj.</p>
+  <p class="note">&sect;&sect;&sect; MACE-MH-1&rsquo;s <code>omat_pbe</code> head is trained on an OMat24 replay set, so OMat24 rattled-1000 is inside its training data. MatPES-PBE is not, although its shared backbone was also fine-tuned on MatPES-r2SCAN structures through a separate head.</p>
   <p class="note">&#8627; Indented rows are additional, differently sized checkpoints of the family above, evaluated for Force Prediction only.</p>
   <p class="note">The three r2SCAN-trained FPs (M3GNet-MatPES-r2SCAN, TensorNet-MatPES-r2SCAN, MACE-MatPES-r2SCAN) are evaluated on the MatPES-r2SCAN dataset (training), in addition to the models listed above.</p>
   <p class="note"><strong style="color:var(--heading);">The last two columns reflect what is currently published on the component leaderboards</strong>, which now extends beyond the roster evaluated in the manuscript. eqV2 and eSEN are evaluated for <a href="phase-stability-ordering.html" style="color:var(--accent);">Phase Stability &amp; Ordering</a>; their <a href="ion-migration-neb.html" style="color:var(--accent);">Ion Migration (NEB)</a> runs are still in progress.</p>

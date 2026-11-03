@@ -80,6 +80,9 @@ FP_ORDER = [
     "Orb_v3_conservative_inf_omat", "SevenNet_mf_ompa", "MatterSim_v1_5M",
     "Nequix_oam_1", "GPTFF_v2", "NEP89", "DPA4_Plus_OMat24",
     "GRACE_3L_OMAT_large_ft_AM", "MACE_OMAT_0_medium",
+    "NequIP_OAM_S", "NequIP_OAM_M", "NequIP_OAM_L",
+    "PET_OMat_XS_v1_0_0", "PET_OMat_S_v1_0_0",
+    "DPA_4_1C_Air_OAM", "MACE_MH_1_omat_pbe",
 ]
 # GPTFF_v2 ran under ASE 3.28.0 while every other second-wave FP ran 3.29.0
 # (all fifteen otherwise share matcalc 0.4.3, neb_method "aseneb" and the same
@@ -94,6 +97,10 @@ FP_ORDER = [
 # MACE_OMAT_0_medium (added after the manuscript) ran in the MACE-MatPES
 # environment: ASE 3.24.0, matcalc 0.4.0, the same neb_method "aseneb" and
 # BFGS-through-MatCalc optimizer.
+# The seven FPs added in 2026-11 (NequIP-OAM-S/M/L, PET-OMat-XS/S,
+# DPA-4.1C-Air, MACE-MH-1 with its omat_pbe head; after the manuscript) ran
+# under ASE 3.29.0 and matcalc 0.4.3, the same neb_method "aseneb" and
+# BFGS-through-MatCalc optimizer as the second wave.
 FP_DISPLAY_NAMES = {
     "MACE-MP0_medium":      "MACE",
     "CHGNET":               "CHGNet",
@@ -111,6 +118,13 @@ FP_DISPLAY_NAMES = {
     "DPA4_Plus_OMat24":             "DPA4",
     "GRACE_3L_OMAT_large_ft_AM":    "GRACE",
     "MACE_OMAT_0_medium":           "MACE-OMAT",
+    "NequIP_OAM_S":                 "NequIP-OAM-S",
+    "NequIP_OAM_M":                 "NequIP-OAM-M",
+    "NequIP_OAM_L":                 "NequIP-OAM-L",
+    "PET_OMat_XS_v1_0_0":           "PET-OMat-XS",
+    "PET_OMat_S_v1_0_0":            "PET-OMat-S",
+    "DPA_4_1C_Air_OAM":             "DPA-4.1C-Air",
+    "MACE_MH_1_omat_pbe":           "MACE-MH-1",
 }
 OUTLIER_THRESHOLD = 1.0
 ROUND_DECIMALS = 4

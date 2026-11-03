@@ -211,6 +211,13 @@ not silently replaced.
 | &#8627; GRACE-2L-large | GRACE-2L-OMAT-large-ft-AM | 26.4M | OMat24 pretraining &rarr; sAlex + MPTrj fine-tuning | not reported for this checkpoint | [GRACE foundation models](https://gracemaker.readthedocs.io/en/latest/gracemaker/foundation/) &middot; [GRACE foundation-model paper](https://arxiv.org/abs/2508.17936) |
 | eqV2 | eqV2_31M_omat_mp_salex.pt | 31.2M | OMat24 pretraining &rarr; MPTrj + sAlex fine-tuning, DFT / DFT+U&#35; | not reported for this checkpoint | [Meta OMat24 models](https://huggingface.co/facebook/OMAT24) |
 | eSEN | esen_30m_oam.pt | 30.2M | OMat24 pretraining &rarr; MPTrj + sAlex fine-tuning, DFT / DFT+U&#35; | not reported for this checkpoint | [Meta OMat24 models](https://huggingface.co/facebook/OMAT24) |
+| NequIP-OAM-S | NequIP-OAM-S-0.1 | 616.4K | OMat24 pretraining &rarr; sAlex + MPTrj fine-tuning&#8214;&#8214; | ~113M frames (~101M + ~10.5M + ~1.5M) | [NequIP foundation potentials (Zenodo)](https://zenodo.org/records/18775904) |
+| NequIP-OAM-M | NequIP-OAM-M-0.1 | 3.19M | OMat24 pretraining &rarr; sAlex + MPTrj fine-tuning&#8214;&#8214; | ~113M frames (~101M + ~10.5M + ~1.5M) | [NequIP foundation potentials (Zenodo)](https://zenodo.org/records/18775904) |
+| NequIP-OAM-L | NequIP-OAM-L-0.1 | 9.61M | OMat24 pretraining &rarr; sAlex + MPTrj fine-tuning&#8214;&#8214; | ~113M frames (~101M + ~10.5M + ~1.5M) | [NequIP foundation potentials (Zenodo)](https://zenodo.org/records/18775904) |
+| PET-OMat-XS | pet-omat-xs-v1.0.0 | 4.49M | OMat24, PBE&dagger;&dagger;&dagger; | not reported for this checkpoint | [UPET models](https://lab-cosmo.github.io/upet/latest/models.html) |
+| PET-OMat-S | pet-omat-s-v1.0.0 | 25.9M | OMat24, PBE&dagger;&dagger;&dagger; | not reported for this checkpoint | [UPET models](https://lab-cosmo.github.io/upet/latest/models.html) |
+| DPA-4.1C-Air | DPA-4.1C-Air-OAM | 433.7K | MPTrj + OMat24 + sAlex&Dagger;&Dagger;&Dagger; | not reported for this checkpoint | [DPA-4.1C-Air-OAM (figshare)](https://doi.org/10.6084/m9.figshare.34755132) |
+| MACE-MH-1 | mace-mh-1 (head `omat_pbe`) | 6.44M | OMat24 pretraining &rarr; multi-head fine-tuning; `omat_pbe` head on an OMat24 replay set, PBE/PBE+U&sect;&sect;&sect; | 100M (pretraining) + fine-tuning sets&sect;&sect;&sect; | [MACE-MH-1 model card](https://huggingface.co/mace-foundations/mace-mh-1) |
 
 \* Pre-trained on MACE-OMAT-0, then fine-tuned on the matched MatPES functional.
 
@@ -264,6 +271,14 @@ reports 105k parameters and does not report the size of the distillation set; FP
 
 &para;&para; MACE-OMAT is the `mace-omat-0-medium` checkpoint (MACE-OMAT-0). The MACE foundation-model documentation lists it as trained on OMat24 at the DFT (PBE+U) level with VASP 54 pseudopotentials, released under the Academic Software License (ASL). It is the base model that the MACE-MatPES checkpoints were fine-tuned from (\*). FP-DeErr counts 9,063,204 parameters in the loaded checkpoint, the same as MACE-MPA-0 and MACE-MatPES. It was added to the leaderboards after the manuscript and is not part of the manuscript roster.
 
+&#8214;&#8214; NequIP-OAM-S, -M and -L are the version 0.1 checkpoints of the [NequIP OAM release](https://zenodo.org/records/18775904). The release states that they are pre-trained on OMat24 (~101M frames) and fine-tuned on sAlex (~10.5M frames) and MPTrj (~1.5M frames); it does not state the DFT level of the labels. The model pages list 0.6M, 3.2M and 9.6M parameters; FP-DeErr counts 616,360, 3,189,672 and 9,605,688 in the loaded checkpoints. The weights are released under CC-BY-4.0. They were added to the leaderboards after the manuscript and are not part of the manuscript roster.
+
+&dagger;&dagger;&dagger; PET-OMat-XS and PET-OMat-S are the v1.0.0 checkpoints of the PET-OMat family. The [UPET documentation](https://lab-cosmo.github.io/upet/latest/models.html) lists PET-OMat as trained on OMat24 at the PBE level, and the UPET paper ([arXiv:2601.16195](https://arxiv.org/abs/2601.16195)) reports 4.5M and 25.9M parameters; FP-DeErr counts 4,487,962 and 25,924,122. Neither source reports the number of training structures for these checkpoints. The UPET repository is released under the BSD-3-Clause license. They were added to the leaderboards after the manuscript and are not part of the manuscript roster.
+
+&Dagger;&Dagger;&Dagger; DPA-4.1C-Air is the `DPA-4.1C-Air-OAM` checkpoint ([figshare](https://doi.org/10.6084/m9.figshare.34755132)). Its [Matbench Discovery model card](https://github.com/janosh/matbench-discovery/blob/main/models/deepmd/dpa-4.1c-air-oam.yml) describes it as trained on MPtrj, OMat24 and sAlex, with pre-training and fine-tuning, and lists 433,673 parameters, which matches the FP-DeErr count. It does not state which dataset was used in which stage, or the training-set size. The checkpoint is released under CC BY 4.0. It was added to the leaderboards after the manuscript and is not part of the manuscript roster.
+
+&sect;&sect;&sect; MACE-MH-1 is a multi-head MACE model; FP-DeErr uses its default `omat_pbe` head (PBE/PBE+U). The [model card](https://huggingface.co/mace-foundations/mace-mh-1) describes pre-training on OMat24 (100M structures) followed by multi-head fine-tuning on a 10M OMat24 replay set (the `omat_pbe` head), MPTrj, SPICE-1, OC20, OMol (1%), RGD1 and MatPES-r2SCAN, each on its own head; the accompanying paper ([arXiv:2510.25380](https://arxiv.org/abs/2510.25380)) states that all weights, including the shared backbone, are fine-tuned. MatPES-PBE is not in its training data. The model card does not report a parameter count; FP-DeErr counts 6,439,878. It is released under the Academic Software License (ASL). It was added to the leaderboards after the manuscript and is not part of the manuscript roster.
+
 &#8627; Rows marked with an arrow are additional checkpoints of the FP family directly above, at
 a different model size. They are evaluated for Force Prediction (MatPES-PBE and OMat24
 rattled-1000) only and appear on the Force Prediction leaderboard next to the family's main
@@ -272,8 +287,8 @@ other sizes are counted from the loaded checkpoints.
 
 The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4
 and GRACE to the seven originally reported. This website evaluates further FPs beyond that
-manuscript roster: the Ion Migration (NEB) leaderboard currently lists 16 FPs and the Phase
-Stability and Ordering leaderboard 18. The r2SCAN-trained entries are a separate set,
+manuscript roster: the Ion Migration (NEB) leaderboard currently lists 23 FPs and the Phase
+Stability and Ordering leaderboard 25. The r2SCAN-trained entries are a separate set,
 evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from
 the loaded checkpoints.
 
@@ -312,10 +327,21 @@ other data (`pretraining`).
 | &#8627; GRACE-2L-large | &#10003; (OOD) | &#10003; (pretraining) | not evaluated | not evaluated |
 | eqV2 | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | not evaluated |
 | eSEN | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | not evaluated |
+| NequIP-OAM-S | &#10003; (OOD) | &#10003; (pretraining)&#8214;&#8214; | &#10003; (OOD) | &#10003; (OOD) |
+| NequIP-OAM-M | &#10003; (OOD) | &#10003; (pretraining)&#8214;&#8214; | &#10003; (OOD) | &#10003; (OOD) |
+| NequIP-OAM-L | &#10003; (OOD) | &#10003; (pretraining)&#8214;&#8214; | &#10003; (OOD) | &#10003; (OOD) |
+| PET-OMat-XS | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
+| PET-OMat-S | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
+| DPA-4.1C-Air | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
+| MACE-MH-1 | &#10003; (OOD)&sect;&sect;&sect; | &#10003; (training)&sect;&sect;&sect; | &#10003; (OOD) | &#10003; (OOD) |
 
 \* Pre-trained on MACE-OMAT-0, fine-tuned on MatPES-PBE.
 
 &para;&para; MACE-OMAT-0 is trained on OMat24, so OMat24 rattled-1000 is inside its training data.
+
+&#8214;&#8214; NequIP-OAM-S, -M and -L use OMat24 for pretraining only and are then fine-tuned on sAlex + MPTrj.
+
+&sect;&sect;&sect; MACE-MH-1's `omat_pbe` head is trained on an OMat24 replay set, so OMat24 rattled-1000 is inside its training data. MatPES-PBE is not, although its shared backbone was also fine-tuned on MatPES-r2SCAN structures through a separate head.
 
 The last two columns reflect what is currently published on the component leaderboards,
 which now extends beyond the roster evaluated in the manuscript. eqV2 and eSEN are evaluated
