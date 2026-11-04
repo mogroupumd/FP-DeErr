@@ -84,13 +84,20 @@
     var tables = fpTables();
     if (!tables.length) return;
 
+    // Suggestions and the count cover the tables in view: on a page with dataset tabs, only the open tab's.
     var models = [], seen = {};
-    tables.forEach(function (t) {
-      bodyRows(t).forEach(function (r) {
-        var n = cellName(r.firstElementChild);
-        if (n && !seen[n]) { seen[n] = true; models.push(n); }
+    function scan() {
+      models = [];
+      seen = {};
+      tables.forEach(function (t) {
+        if (t.closest('.tab-panel:not(.active)')) return;
+        bodyRows(t).forEach(function (r) {
+          var n = cellName(r.firstElementChild);
+          if (n && !seen[n]) { seen[n] = true; models.push(n); }
+        });
       });
-    });
+    }
+    scan();
 
     var sel = loadSelection();
     var style = document.createElement('style');
@@ -153,7 +160,7 @@
       sel.forEach(function (n) {
         var c = document.createElement('span');
         c.className = 'fpf-chip' + (seen[n] ? '' : ' absent');
-        if (!seen[n]) c.title = 'Not evaluated in any table on this page';
+        if (!seen[n]) c.title = 'Not in the tables shown here';
         c.appendChild(document.createTextNode(n));
         var x = document.createElement('button');
         x.type = 'button';
@@ -168,7 +175,7 @@
       status.innerHTML = '';
       var s = document.createElement('span');
       s.textContent = on
-        ? 'Showing ' + present + ' of ' + models.length + ' FPs on this page'
+        ? 'Showing ' + present + ' of ' + models.length + ' FPs'
         : 'Showing all ' + models.length + ' FPs. Pick one or more to compare; you can also click an FP name in any table.';
       status.appendChild(s);
       if (on) {
@@ -249,7 +256,7 @@
       if (!opts.length) {
         var e = document.createElement('div');
         e.className = 'fpf-empty';
-        e.textContent = 'No FP on this page matches “' + raw + '”.';
+        e.textContent = 'No FP here matches “' + raw + '”.';
         list.appendChild(e);
       }
       if (sel.length) {
@@ -323,21 +330,20 @@
       pending = true;
       requestAnimationFrame(function () {
         pending = false;
-        var before = models.length;
-        tables.forEach(function (t) {
-          bodyRows(t).forEach(function (r) {
-            var n = cellName(r.firstElementChild);
-            if (n && !seen[n]) { seen[n] = true; models.push(n); }
-          });
-        });
+        var before = models.join('|');
+        scan();
         mo.disconnect();
         apply();
-        if (models.length !== before) render();
+        if (models.join('|') !== before) render();
         tables.forEach(function (t) { mo.observe(t, { childList: true, subtree: true }); });
       });
     });
     tables.forEach(function (t) { mo.observe(t, { childList: true, subtree: true }); });
 
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest || !e.target.closest('.tab-btn')) return;
+      setTimeout(function () { scan(); apply(); }, 0);
+    });
     window.addEventListener('resize', placeBar);
     if (sel.length) saveSelection(sel);
     apply();

@@ -469,30 +469,6 @@
         <td><a href="https://mace-docs.readthedocs.io/en/latest/guide/foundation_models.html" style="color:var(--accent);">MACE foundation models</a></td>
       </tr>
       <tr>
-        <td>M3GNet-MatPES-r2SCAN</td>
-        <td>v2025.1</td>
-        <td>664.2K</td>
-        <td>MatPES-r2SCAN</td>
-        <td>~388K</td>
-        <td><a href="https://matgl.ai/" style="color:var(--accent);">MatGL</a> &middot; <a href="https://matpes.ai/" style="color:var(--accent);">MatPES</a></td>
-      </tr>
-      <tr>
-        <td>TensorNet-MatPES-r2SCAN</td>
-        <td>v2025.1</td>
-        <td>837.9K</td>
-        <td>MatPES-r2SCAN</td>
-        <td>~388K</td>
-        <td><a href="https://matgl.ai/" style="color:var(--accent);">MatGL</a> &middot; <a href="https://matpes.ai/" style="color:var(--accent);">MatPES</a></td>
-      </tr>
-      <tr>
-        <td>MACE-MatPES-r2SCAN</td>
-        <td>&gt;=v0.3.10</td>
-        <td>9.06M</td>
-        <td>Fine-tuned on MatPES-r2SCAN<sup><button type="button" class="fn-ref" data-note="mnote-1" aria-expanded="false" aria-label="Note *">*</button></sup></td>
-        <td>~388K</td>
-        <td><a href="https://github.com/acesuit/mace" style="color:var(--accent);">MACE (GitHub)</a></td>
-      </tr>
-      <tr>
         <td>Orb</td>
         <td>orb-v3-conservative-inf-omat-20250404</td>
         <td>25.5M</td>
@@ -691,6 +667,43 @@
         <td>OMat24 pretraining &rarr; multi-head fine-tuning; <code>omat_pbe</code> head on an OMat24 replay set, PBE/PBE+U<sup><button type="button" class="fn-ref" data-note="mnote-15" aria-expanded="false" aria-label="Note §§§">&sect;&sect;&sect;</button></sup></td>
         <td>100M (pretraining) + fine-tuning sets<sup><button type="button" class="fn-ref" data-note="mnote-15" aria-expanded="false" aria-label="Note §§§">&sect;&sect;&sect;</button></sup></td>
         <td><a href="https://huggingface.co/mace-foundations/mace-mh-1" style="color:var(--accent);">MACE-MH-1 model card</a></td>
+      </tr>
+    </table>
+  </div>
+  <p class="note">The three r2SCAN-trained FPs (M3GNet-MatPES-r2SCAN, TensorNet-MatPES-r2SCAN, MACE-MatPES-r2SCAN) are evaluated on the MatPES-r2SCAN dataset (training), in addition to the models listed above.</p>
+  <div class="table-scroll-plain">
+    <table class="gen">
+      <tr>
+        <th>r2SCAN-trained FP</th>
+        <th>Model &amp; version</th>
+        <th>Model size</th>
+        <th>Training dataset</th>
+        <th>Approx. training-dataset size</th>
+        <th>Official source</th>
+      </tr>
+      <tr>
+        <td>M3GNet-MatPES-r2SCAN</td>
+        <td>v2025.1</td>
+        <td>664.2K</td>
+        <td>MatPES-r2SCAN</td>
+        <td>~388K</td>
+        <td><a href="https://matgl.ai/" style="color:var(--accent);">MatGL</a> &middot; <a href="https://matpes.ai/" style="color:var(--accent);">MatPES</a></td>
+      </tr>
+      <tr>
+        <td>TensorNet-MatPES-r2SCAN</td>
+        <td>v2025.1</td>
+        <td>837.9K</td>
+        <td>MatPES-r2SCAN</td>
+        <td>~388K</td>
+        <td><a href="https://matgl.ai/" style="color:var(--accent);">MatGL</a> &middot; <a href="https://matpes.ai/" style="color:var(--accent);">MatPES</a></td>
+      </tr>
+      <tr>
+        <td>MACE-MatPES-r2SCAN</td>
+        <td>&gt;=v0.3.10</td>
+        <td>9.06M</td>
+        <td>Fine-tuned on MatPES-r2SCAN<sup><button type="button" class="fn-ref" data-note="mnote-1" aria-expanded="false" aria-label="Note *">*</button></sup></td>
+        <td>~388K</td>
+        <td><a href="https://github.com/acesuit/mace" style="color:var(--accent);">MACE (GitHub)</a></td>
       </tr>
     </table>
   </div>
