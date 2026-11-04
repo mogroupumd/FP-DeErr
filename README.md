@@ -280,15 +280,14 @@ reports 105k parameters and does not report the size of the distillation set; FP
 &sect;&sect;&sect; MACE-MH-1 is a multi-head MACE model; FP-DeErr uses its default `omat_pbe` head (PBE/PBE+U). The [model card](https://huggingface.co/mace-foundations/mace-mh-1) describes pre-training on OMat24 (100M structures) followed by multi-head fine-tuning on a 10M OMat24 replay set (the `omat_pbe` head), MPTrj, SPICE-1, OC20, OMol (1%), RGD1 and MatPES-r2SCAN, each on its own head; the accompanying paper ([arXiv:2510.25380](https://arxiv.org/abs/2510.25380)) states that all weights, including the shared backbone, are fine-tuned. MatPES-PBE is not in its training data. The model card does not report a parameter count; FP-DeErr counts 6,439,878. It is released under the Academic Software License (ASL). It was added to the leaderboards after the manuscript and is not part of the manuscript roster.
 
 &#8627; Rows marked with an arrow are additional checkpoints of the FP family directly above, at
-a different model size. They are evaluated for Force Prediction (MatPES-PBE and OMat24
-rattled-1000) only and appear on the Force Prediction leaderboard next to the family's main
-checkpoint. The DPA4 sizes are the parameter counts published on the DPA4-OMat24 model card; the
+a different model size. They are evaluated on every component and appear on each leaderboard
+next to the family's main checkpoint. The DPA4 sizes are the parameter counts published on the DPA4-OMat24 model card; the
 other sizes are counted from the loaded checkpoints.
 
 The manuscript revision expands the main roster to eleven FPs, adding Orb, MatterSim, DPA4
 and GRACE to the seven originally reported. This website evaluates further FPs beyond that
-manuscript roster: the Ion Migration (NEB) leaderboard currently lists 25 FPs and the Phase
-Stability and Ordering leaderboard 25. The r2SCAN-trained entries are a separate set,
+manuscript roster: the Ion Migration (NEB) leaderboard currently lists 32 FPs and the Phase
+Stability and Ordering leaderboard 32. The r2SCAN-trained entries are a separate set,
 evaluated only on the MatPES-r2SCAN dataset. Model sizes are parameter counts measured from
 the loaded checkpoints.
 
@@ -311,20 +310,20 @@ other data (`pretraining`).
 | MACE-OMAT | &#10003; (OOD) | &#10003; (training)&para;&para; | &#10003; (OOD) | &#10003; (OOD) |
 | Orb | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
 | SevenNet | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
-| &#8627; SevenNet-0 | &#10003; (OOD) | &#10003; (OOD) | not evaluated | not evaluated |
-| &#8627; SevenNet-Nano | &#10003; (training) | &#10003; (training) | not evaluated | not evaluated |
+| &#8627; SevenNet-0 | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) |
+| &#8627; SevenNet-Nano | &#10003; (training) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
 | MatterSim | &#10003; (OOD)&dagger; | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) |
-| &#8627; MatterSim-1M | &#10003; (OOD)&dagger; | &#10003; (OOD) | not evaluated | not evaluated |
+| &#8627; MatterSim-1M | &#10003; (OOD)&dagger; | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) |
 | Nequix | &#10003; (OOD)&sect; | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
 | GPTFF | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) |
 | ALIGNN | &#10003; (OOD)&para; | not evaluated | not evaluated | not evaluated |
 | NEP89 | &#10003; (OOD)&dagger;&dagger; | &#10003; (OOD) | &#10003; (OOD) | &#10003; (OOD) |
 | DPA4 | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
-| &#8627; DPA4-Air | &#10003; (OOD) | &#10003; (training) | not evaluated | not evaluated |
+| &#8627; DPA4-Air | &#10003; (OOD) | &#10003; (training) | &#10003; (OOD) | &#10003; (OOD) |
 | GRACE | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD) |
-| &#8627; GRACE-1L | &#10003; (OOD) | &#10003; (pretraining) | not evaluated | not evaluated |
-| &#8627; GRACE-2L | &#10003; (OOD) | &#10003; (pretraining) | not evaluated | not evaluated |
-| &#8627; GRACE-2L-large | &#10003; (OOD) | &#10003; (pretraining) | not evaluated | not evaluated |
+| &#8627; GRACE-1L | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD) |
+| &#8627; GRACE-2L | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD) |
+| &#8627; GRACE-2L-large | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD) |
 | eqV2 | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD)&para;&para;&para; |
 | eSEN | &#10003; (OOD) | &#10003; (pretraining) | &#10003; (OOD) | &#10003; (OOD) |
 | NequIP-OAM-S | &#10003; (OOD) | &#10003; (pretraining)&#8214;&#8214; | &#10003; (OOD) | &#10003; (OOD) |

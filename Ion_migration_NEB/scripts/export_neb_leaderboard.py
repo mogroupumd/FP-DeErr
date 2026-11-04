@@ -77,9 +77,13 @@ from pathlib import Path
 FP_ORDER = [
     "MACE-MP0_medium", "CHGNET", "M3GNET_pes", "UMA_s1_p1",
     "M3GNET_matpes_PBE", "TensorNET_matpes_PBE", "MACE_matpes_pbe",
-    "Orb_v3_conservative_inf_omat", "SevenNet_mf_ompa", "MatterSim_v1_5M",
-    "Nequix_oam_1", "GPTFF_v2", "NEP89", "DPA4_Plus_OMat24",
-    "GRACE_3L_OMAT_large_ft_AM", "eqV2_31M_OMat_MP_sAlex", "eSEN_30M_OAM",
+    "Orb_v3_conservative_inf_omat",
+    "SevenNet_mf_ompa", "SevenNet_0", "SevenNet_nano_6p0",
+    "MatterSim_v1_5M", "MatterSim_v1_1M",
+    "Nequix_oam_1", "GPTFF_v2", "NEP89",
+    "DPA4_Plus_OMat24", "DPA4_Air_OMat24",
+    "GRACE_3L_OMAT_large_ft_AM", "GRACE_1L_OAM", "GRACE_2L_OAM", "GRACE_2L_OMAT_large_ft_AM",
+    "eqV2_31M_OMat_MP_sAlex", "eSEN_30M_OAM",
     "MACE_OMAT_0_medium",
     "NequIP_OAM_S", "NequIP_OAM_M", "NequIP_OAM_L",
     "PET_OMat_XS_v1_0_0", "PET_OMat_S_v1_0_0",
@@ -102,6 +106,9 @@ FP_ORDER = [
 # DPA-4.1C-Air, MACE-MH-1 with its omat_pbe head; after the manuscript) ran
 # under ASE 3.29.0 and matcalc 0.4.3, the same neb_method "aseneb" and
 # BFGS-through-MatCalc optimizer as the second wave.
+# The seven size variants (SevenNet-0, SevenNet-Nano, MatterSim-1M, DPA4-Air,
+# GRACE-1L, GRACE-2L, GRACE-2L-large; added after the manuscript) are listed
+# directly after the FP family they belong to.
 FP_DISPLAY_NAMES = {
     "MACE-MP0_medium":      "MACE",
     "CHGNET":               "CHGNet",
@@ -112,12 +119,19 @@ FP_DISPLAY_NAMES = {
     "MACE_matpes_pbe":      "MACE-MatPES",
     "Orb_v3_conservative_inf_omat": "Orb",
     "SevenNet_mf_ompa":             "SevenNet",
+    "SevenNet_0":                   "SevenNet-0",
+    "SevenNet_nano_6p0":            "SevenNet-Nano",
     "MatterSim_v1_5M":              "MatterSim",
+    "MatterSim_v1_1M":              "MatterSim-1M",
     "Nequix_oam_1":                 "Nequix",
     "GPTFF_v2":                     "GPTFF",
     "NEP89":                        "NEP89",
     "DPA4_Plus_OMat24":             "DPA4",
+    "DPA4_Air_OMat24":              "DPA4-Air",
     "GRACE_3L_OMAT_large_ft_AM":    "GRACE",
+    "GRACE_1L_OAM":                 "GRACE-1L",
+    "GRACE_2L_OAM":                 "GRACE-2L",
+    "GRACE_2L_OMAT_large_ft_AM":    "GRACE-2L-large",
     "eqV2_31M_OMat_MP_sAlex":       "eqV2",
     "eSEN_30M_OAM":                 "eSEN",
     "MACE_OMAT_0_medium":           "MACE-OMAT",
